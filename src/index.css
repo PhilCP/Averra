@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00a8e8;    /* Vibrant cyan */
+--color-secondary: #2b5ca8;  /* Medium blue (from logo) */
+--color-accent: #60a5fa;     /* Soft blue */
+--color-dark: #1e40af;       /* Deep blue */
+--color-light: #bfdbfe;      /* Pale blue */
+  --font-sans: "Inter", sans-serif;
+}
