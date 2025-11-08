@@ -117,17 +117,14 @@ Every detail. Every room. One flat fee.
           {/* Animated Stats Section */}
           <div className="flex items-center gap-10 mb-10">
             <div className="text-center">
-              <AnimatedNumber value={53000} />
+              <AnimatedNumber value={250} />
               <p className="text-gray-500 text-sm">Layouts Cleaned</p>
             </div>
             <div className="text-center">
-              <AnimatedNumber value={10000} />
+              <AnimatedNumber value={190} />
               <p className="text-gray-500 text-sm">Projects Completed</p>
             </div>
-            <div className="text-center">
-              <AnimatedNumber value={150} />
-              <p className="text-gray-500 text-sm">Awards Won</p>
-            </div>
+           
           </div>
         </motion.div>
       </div>

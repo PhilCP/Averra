@@ -117,7 +117,7 @@ const Footer: FC = () => {
       {showTopBtn && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 bg-amber-500 hover:bg-amber-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
+          className="fixed bottom-6 right-6 bg-primary hover:bg-amber-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" />
