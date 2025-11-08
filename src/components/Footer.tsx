@@ -45,7 +45,7 @@ const Footer: FC = () => {
               Premium home & office cleaning services across Nairobi.
               Reliable, professional, and spotless results every time.
             </p>
-            <Button className="bg-amber-500 hover:bg-amber-600 text-white rounded-full px-6 py-2 transition-all">
+            <Button className="bg-primary hover:bg-amber-600 text-white rounded-full px-6 py-2 transition-all">
               Book a Cleaning
             </Button>
           </div>
