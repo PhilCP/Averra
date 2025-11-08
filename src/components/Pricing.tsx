@@ -1,57 +1,64 @@
 "use client"
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "./ui/button"
-import { CheckCircle2 } from "lucide-react"
-
-const plans = {
-  monthly: [
-    {
-      name: "Basic",
-      price: "Ksh 7,000/mo",
-      features: ["2 Rooms Cleaning", "Weekly Scheduling", "Standard Support"],
-    },
-    {
-      name: "Standard",
-      price: "Ksh 8,000/mo",
-      features: ["5 Rooms Cleaning", "Bi-weekly Deep Clean", "Priority Support"],
-    },
-    {
-      name: "Premium",
-      price: "Ksh 9,000/mo",
-      features: ["Unlimited Rooms", "Full House Cleaning", "24/7 Support"],
-    },
-  ],
-  yearly: [
-    {
-      name: "Basic",
-      price: "Ksh 19,000/yr",
-      features: ["2 Rooms Cleaning", "Weekly Scheduling", "Standard Support"],
-    },
-    {
-      name: "Standard",
-      price: "Ksh 39,000/yr",
-      features: ["5 Rooms Cleaning", "Bi-weekly Deep Clean", "Priority Support"],
-    },
-    {
-      name: "Premium",
-      price: "Ksh 59,000/yr",
-      features: ["Unlimited Rooms", "Full House Cleaning", "24/7 Support"],
-    },
-  ],
-}
+import { motion } from "framer-motion"
+import { CheckCircle2, Sparkles } from "lucide-react"
 
 export default function Pricing() {
-  const [isYearly, setIsYearly] = useState(false)
-  const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
+  const pricingData = [
+    {
+      type: "Studio",
+      price: "Ksh 5,000",
+      summary:
+        "All-inclusive cleaning, laundry, appliances & steam. Twice-a-week cleaning ensures your home stays spotless all month long.",
+    },
+    {
+      type: "1 Bedroom",
+      price: "Ksh 8,000",
+      summary:
+        "Full home care — laundry, dishes, deep steam sanitation, and light organization. Perfect for modern 1-bedroom apartments.",
+    },
+    {
+      type: "2 Bedroom",
+      price: "Ksh 13,000",
+      summary:
+        "Comprehensive cleaning package with deep sanitation, fabric care, carpets, sofas, and full organization. Ideal for growing households.",
+    },
+    {
+      type: "3 Bedroom",
+      price: "Ksh 18,000",
+      summary:
+        "Premium care for spacious apartments — from kitchen appliances to furniture detailing, all included.",
+    },
+    {
+      type: "4 Bedroom",
+      price: "Ksh 23,500",
+      summary:
+        "Full family-size home cleaning — everything from laundry, ironing, dishes, and deep steam cleaning for every room.",
+    },
+    {
+      type: "5 Bedroom",
+      price: "Ksh 25,000",
+      summary:
+        "Luxury all-in-one service for large homes — complete peace of mind with every detail handled professionally.",
+    },
+  ]
+
+  const inclusions = [
+    "Dishes, laundry & ironing",
+    "Kitchen & bathroom deep steam cleaning",
+    "Fridge, microwave & oven care",
+    "Carpet, sofa & bed cleaning",
+    "Surface dusting, mopping & sanitizing",
+    "Fabric & furniture detailing",
+    "Light organization & bed making",
+  ]
 
   return (
     <section
       id="pricing"
-      className="py-24 bg-gradient-to-br from-blue-50 via-white to-sky-100 relative overflow-hidden"
+      className="relative py-24 bg-gradient-to-br from-blue-50 via-white to-sky-100 overflow-hidden"
     >
-      {/* Soft glowing background */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(59,130,246,0.2),transparent_70%)] opacity-60"></div>
+      {/* Soft glow background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.15),transparent_70%)] opacity-70"></div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <motion.p
@@ -67,98 +74,97 @@ export default function Pricing() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold mb-12 text-gray-900"
+          className="text-4xl md:text-5xl font-bold mb-6 text-gray-900"
         >
-          Choose Your Cleaning Plan
+          Dedicated to Perfection — One Flat Monthly Fee
         </motion.h2>
 
-        {/* Toggle */}
-        <div className="flex justify-center mb-16">
-          <div className="flex bg-white/40 backdrop-blur-lg border border-sky-200 rounded-full shadow-inner overflow-hidden">
-            <button
-              onClick={() => setIsYearly(false)}
-              className={`px-6 py-2 text-sm font-medium transition-all ${
-                !isYearly
-                  ? "bg-sky-600 text-white shadow-md"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="text-gray-600 max-w-2xl mx-auto mb-12"
+        >
+          Experience elevated, all-inclusive home cleaning with Averra Cleaners. Every detail. Every
+          room. One simple monthly price.
+        </motion.p>
+
+        {/* Pricing Table */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {pricingData.map((plan, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.04, y: -5 }}
+              transition={{
+                type: "spring",
+                stiffness: 200,
+                damping: 15,
+                delay: index * 0.1,
+              }}
+              className="relative bg-white/40 border border-white/50 backdrop-blur-xl rounded-3xl p-8 text-left shadow-lg hover:shadow-sky-200/50 transition-all duration-300 overflow-hidden"
             >
-              Monthly
-            </button>
-            <button
-              onClick={() => setIsYearly(true)}
-              className={`px-6 py-2 text-sm font-medium transition-all ${
-                isYearly
-                  ? "bg-sky-600 text-white shadow-md"
-                  : "text-gray-600 hover:text-gray-900"
-              }`}
-            >
-              Yearly
-            </button>
-          </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-300/10 to-transparent opacity-0 hover:opacity-100 transition-all duration-500"></div>
+
+              <h3 className="text-2xl font-semibold text-gray-900 mb-2">
+                {plan.type}
+              </h3>
+              <p className="text-3xl font-bold text-sky-600 mb-4">
+                {plan.price} <span className="text-base text-gray-500 font-normal">/ month</span>
+              </p>
+              <p className="text-gray-700 leading-relaxed">{plan.summary}</p>
+            </motion.div>
+          ))}
         </div>
 
-        {/* Cards */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={isYearly ? "yearly" : "monthly"}
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -40 }}
-            transition={{ duration: 0.5 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-10"
-          >
-            {plans[isYearly ? "yearly" : "monthly"].map((plan, i) => {
-              const isSelected = selectedPlan === plan.name
-              return (
-                <motion.div
-                  key={i}
-                  whileHover={{ scale: 1.05, y: -5 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                  onClick={() => setSelectedPlan(plan.name)}
-                  className={`relative cursor-pointer bg-white/30 border backdrop-blur-xl rounded-3xl p-8 transition-all duration-300 shadow-lg ${
-                    isSelected
-                      ? "border-sky-500 shadow-sky-300/50"
-                      : "border-white/40 hover:border-sky-300/60"
-                  }`}
-                >
-                  <div
-                    className={`absolute inset-0 rounded-3xl opacity-0 hover:opacity-100 transition bg-gradient-to-br from-sky-300/20 to-transparent`}
-                  ></div>
+        {/* Inclusions */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7 }}
+          className="max-w-3xl mx-auto text-left bg-white/30 border border-white/40 backdrop-blur-xl rounded-3xl p-10 shadow-lg relative"
+        >
+          <div className="flex items-center gap-3 mb-6">
+            <Sparkles className="w-8 h-8 text-sky-600" />
+            <h3 className="text-2xl font-semibold text-gray-900">
+              Every Plan Includes
+            </h3>
+          </div>
 
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    {plan.name}
-                  </h3>
-                  <p className="text-4xl font-extrabold text-sky-600 mb-8">
-                    {plan.price}
-                  </p>
+          <ul className="space-y-3 text-gray-700">
+            {inclusions.map((item, i) => (
+              <motion.li
+                key={i}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.05 }}
+                className="flex items-start gap-3"
+              >
+                <CheckCircle2 className="text-sky-500 w-5 h-5 mt-1 flex-shrink-0" />
+                {item}
+              </motion.li>
+            ))}
+          </ul>
 
-                  <ul className="space-y-3 mb-8 text-gray-700">
-                    {plan.features.map((feature, idx) => (
-                      <li
-                        key={idx}
-                        className="flex justify-center items-center gap-2"
-                      >
-                        <CheckCircle2 className="text-sky-500 w-5 h-5" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
+          <p className="mt-8 text-gray-800 font-medium">
+            Cleaning Frequency:{" "}
+            <span className="text-sky-600 font-semibold">
+              Twice a week (8 times per month)
+            </span>{" "}
+            to keep your home effortlessly elegant.
+          </p>
+        </motion.div>
 
-                  <Button
-                    className={`w-full rounded-full py-4 font-semibold transition-all ${
-                      isSelected
-                        ? "bg-sky-600 hover:bg-sky-700 text-white shadow-md"
-                        : "bg-gray-900 hover:bg-sky-600 text-white"
-                    }`}
-                  >
-                    {isSelected ? "Selected" : "Choose Plan"}
-                  </Button>
-                </motion.div>
-              )
-            })}
-          </motion.div>
-        </AnimatePresence>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="mt-12 text-gray-700 max-w-2xl mx-auto leading-relaxed"
+        >
+          We’re not your average cleaners. We handle everything — from dishes and laundry to steam
+          cleaning, sofas, and carpets — for one simple monthly price.
+        </motion.p>
       </div>
     </section>
   )

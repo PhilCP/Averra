@@ -1,4 +1,4 @@
-import {  useState } from "react"
+import { useState } from "react"
 import type { FC } from "react"
 import {
   Accordion,
@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion"
-
 
 const FAQ: FC = () => {
   const [hovered, setHovered] = useState<"one" | "two" | null>(null)
@@ -17,45 +16,50 @@ const FAQ: FC = () => {
         {/* LEFT: FAQ content */}
         <div>
           <p className="text-sm text-primary tracking-widest uppercase mb-2">
-            Frequently Asked Questions
+            FAQ
           </p>
           <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-snug">
-            Get Answers to Common Questions About Our Services
+            Your Questions, Answered
           </h2>
 
           <Accordion type="single" collapsible className="w-full mb-10">
             <AccordionItem value="item-1">
-              <AccordionTrigger>What do you not clean?</AccordionTrigger>
+              <AccordionTrigger>
+                What’s included in the monthly cleaning package?
+              </AccordionTrigger>
               <AccordionContent>
-                We do not clean hazardous materials, outdoor areas, or electrical appliances.
+                Our monthly cleaning package covers everything — dishes, laundry, ironing, kitchen and bathroom deep cleaning, appliances, carpets, and more. You get 8 thorough cleanings per month (twice a week).
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
-              <AccordionTrigger>
-                Do I need to be home for every cleaning service?
-              </AccordionTrigger>
+              <AccordionTrigger>Can I choose my cleaning days?</AccordionTrigger>
               <AccordionContent>
-                Not necessarily! Many clients provide access codes or keys so we can clean while they’re away.
+                Yes! You can select the days that best fit your schedule. We’re flexible and adjust to your preferred routine.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger>How will our relationship work?</AccordionTrigger>
+              <AccordionTrigger>How do payments work?</AccordionTrigger>
               <AccordionContent>
-                We start with an initial deep clean, followed by scheduled maintenance cleans as per your plan.
+                Payments are made monthly in advance through your preferred method — mobile money, card, or bank transfer. There are no hidden fees or add-ons.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-4">
-              <AccordionTrigger>What time does your team arrive?</AccordionTrigger>
+              <AccordionTrigger>Do you bring your own cleaning supplies?</AccordionTrigger>
               <AccordionContent>
-                We usually start appointments between 8 AM and 5 PM, depending on your selected schedule.
+                Absolutely! Our team brings high-quality, eco-friendly cleaning products and professional tools to every visit.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger>What if I’m not satisfied with the service?</AccordionTrigger>
+              <AccordionContent>
+                Your satisfaction is guaranteed. If you’re not happy, we’ll schedule a free re-clean or resolve the issue promptly.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-
-          
         </div>
 
         {/* RIGHT: Layered Images with Hover Interaction */}

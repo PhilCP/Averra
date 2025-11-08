@@ -38,7 +38,7 @@ export default function Hero() {
         >
           <Sparkles className="w-4 h-4 text-blue-300" />
           <span className="text-sm tracking-wider text-blue-100 uppercase font-medium">
-            Committed To Perfection
+            DEDICATED TO PERFECTION
           </span>
         </motion.div>
 
@@ -49,8 +49,8 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 1 }}
           className="text-3xl md:text-5xl font-extrabold leading-[1.15] mb-6 tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.2)]"
         >
-          Experience the <span className="text-sky-400">Future</span> of <br />
-          Professional Cleaning
+          Experience <span className="text-sky-400">Elevated</span> <br />
+          Home Cleaning
         </motion.h1>
 
         {/* Subtitle */}
@@ -60,7 +60,9 @@ export default function Hero() {
           transition={{ delay: 0.6, duration: 1 }}
           className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Smart, spotless, and sustainable cleaning solutions crafted for homes, offices, and modern spaces that deserve excellence.
+          Premium, all-inclusive cleaning services designed for Nairobi’s modern apartments and homes.
+From laundry to deep steam sanitation Averra Cleaners makes your space effortlessly
+elegant.
         </motion.p>
 
         {/* CTA */}
@@ -89,13 +91,13 @@ export default function Hero() {
           className="mt-10 flex flex-wrap justify-center items-center gap-8 text-sm md:text-base text-blue-100"
         >
           <div className="flex flex-col items-center">
-            <span className="text-3xl font-bold text-white">100+</span>
+            <span className="text-3xl font-bold text-white">200+</span>
             <span>Happy Clients</span>
           </div>
           <div className="w-1 h-8 bg-white/20 rounded-full hidden md:block" />
           <div className="flex flex-col items-center">
-            <span className="text-3xl font-bold text-white">24/7</span>
-            <span>Support</span>
+            <span className="text-3xl font-bold text-white">Twice-a-Week </span>
+            <span>Cleaning</span>
           </div>
           <div className="w-1 h-8 bg-white/20 rounded-full hidden md:block" />
           <div className="flex flex-col items-center">

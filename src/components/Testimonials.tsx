@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
@@ -5,24 +6,52 @@ import { Button } from "./ui/button"
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
-    role: "Homeowner",
+    name: "Grace M.",
+    role: "Kilimani",
     message:
-      "Ocean Cleaning transformed my home! Every corner shines — their team is professional, detail-oriented, and incredibly friendly. A truly premium experience.",
+      "Averra Cleaners has completely transformed my home. They handle everything — even my oven and couch look brand new every week.",
     image: "/av.jpg",
   },
   {
-    name: "David Kim",
-    role: "Office Manager",
+    name: "Brian K.",
+    role: "Lavington",
     message:
-      "Our workspace has never looked this polished. Their consistency and reliability make them stand out. Highly recommended for corporate cleaning.",
+      "They’re consistent, professional, and my home has never felt this fresh.",
     image: "/averra-hero.jpg",
   },
   {
-    name: "Emily Carter",
-    role: "Apartment Renter",
+    name: "Sylvia N.",
+    role: "Westlands",
     message:
-      "I love how they care about the little details and the environment. My apartment smells fresh and feels brand new after every visit.",
+      "Since hiring Averra Cleaners, I actually look forward to coming home. Everything is spotless, and they take care of the little things I always forget.",
+    image: "/av.jpg",
+  },
+  {
+    name: "Michael O.",
+    role: "Parklands",
+    message:
+      "The team at Averra Cleaners is amazing! Punctual, thorough, and very friendly. My home has never been cleaner.",
+    image: "/averra-hero.jpg",
+  },
+  {
+    name: "Faith W.",
+    role: "Kilimani",
+    message:
+      "I love that they offer a full-service package. From laundry to deep cleaning, they make my life so much easier.",
+    image: "/av.jpg",
+  },
+  {
+    name: "James T.",
+    role: "Lavington",
+    message:
+      "Averra Cleaners is worth every penny. They’re reliable, detail-oriented, and my home always smells fresh and inviting.",
+    image: "/averra-hero.jpg",
+  },
+  {
+    name: "Rachel A.",
+    role: "Westlands",
+    message:
+      "The professionalism and care they show are unmatched. Even my carpets and curtains look brand new!",
     image: "/av.jpg",
   },
 ]
@@ -34,7 +63,7 @@ const Testimonials = () => {
   const handlePrev = () =>
     setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
 
-  // Optional auto-slide every 6s
+  // Auto-slide every 6 seconds
   useEffect(() => {
     const timer = setInterval(handleNext, 6000)
     return () => clearInterval(timer)
@@ -50,7 +79,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-sky-400 font-semibold tracking-widest uppercase mb-2">
+          <p className="text-amber-400 font-semibold tracking-widest uppercase mb-2">
             Testimonials
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-14 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
@@ -63,9 +92,9 @@ const Testimonials = () => {
           <Button
             onClick={handlePrev}
             variant="outline"
-            className="hidden md:flex absolute left-0 z-10 rounded-full bg-neutral-800/80 hover:bg-sky-900/40 border-none backdrop-blur-md shadow-md transition"
+            className="hidden md:flex absolute left-0 z-10 rounded-full bg-neutral-800/80 hover:bg-amber-700/40 border-none backdrop-blur-md shadow-md transition"
           >
-            <ChevronLeft className="w-6 h-6 text-sky-400" />
+            <ChevronLeft className="w-6 h-6 text-amber-400" />
           </Button>
 
           <div className="overflow-hidden w-full max-w-4xl">
@@ -89,7 +118,7 @@ const Testimonials = () => {
 
                 {/* Text */}
                 <div className="flex-1 space-y-5">
-                  <Quote className="text-sky-400 w-10 h-10 opacity-70" />
+                  <Quote className="text-amber-400 w-10 h-10 opacity-70" />
                   <p className="text-gray-300 text-lg leading-relaxed">
                     “{t.message}”
                   </p>
@@ -108,9 +137,9 @@ const Testimonials = () => {
           <Button
             onClick={handleNext}
             variant="outline"
-            className="hidden md:flex absolute right-0 z-10 rounded-full bg-neutral-800/80 hover:bg-sky-900/40 border-none backdrop-blur-md shadow-md transition"
+            className="hidden md:flex absolute right-0 z-10 rounded-full bg-neutral-800/80 hover:bg-amber-700/40 border-none backdrop-blur-md shadow-md transition"
           >
-            <ChevronRight className="w-6 h-6 text-sky-400" />
+            <ChevronRight className="w-6 h-6 text-amber-400" />
           </Button>
         </div>
 
@@ -119,14 +148,14 @@ const Testimonials = () => {
           <Button
             variant="outline"
             onClick={handlePrev}
-            className="border-sky-500 text-sky-400 bg-neutral-800 hover:bg-sky-900/50 rounded-full"
+            className="border-amber-500 text-amber-400 bg-neutral-800 hover:bg-amber-700/50 rounded-full"
           >
             ← Prev
           </Button>
           <Button
             variant="outline"
             onClick={handleNext}
-            className="border-sky-500 text-sky-400 bg-neutral-800 hover:bg-sky-900/50 rounded-full"
+            className="border-amber-500 text-amber-400 bg-neutral-800 hover:bg-amber-700/50 rounded-full"
           >
             Next →
           </Button>

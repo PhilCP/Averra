@@ -91,19 +91,27 @@ const About = () => {
             About Averra Cleaners
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            A Clean Home is a Happy Home
+            A Clean Home is a Better Life
           </h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            At <span className="font-semibold text-gray-900">Averra Cleaners </span>, we
-            believe that a spotless environment creates harmony and peace of mind.
+            At <span className="font-semibold text-gray-900">Averra Cleaners </span>, we’re redefining home cleaning in Nairobi.
+Our team goes beyond surface cleaning delivering complete, all-inclusive care that
+covers
             Our experienced team provides <span className="text-amber-500">residential </span> 
-            and <span className="text-amber-500">commercial cleaning</span> services tailored 
-            to meet your needs from deep sanitation to regular upkeep.
+            and <span className="text-amber-500">laundry, dishes, appliances, steam cleaning, fabric care</span> under one simple monthly plan
           </p>
           <p className="text-gray-600 mb-8 leading-relaxed">
-            We’re committed to sustainability by using eco-friendly products and
-            advanced cleaning technologies. Our reputation is built on trust,
-            reliability, and results that shine literally.
+            At Averra Cleaners, we’re redefining home cleaning in Nairobi.
+Our team goes beyond surface cleaning delivering complete, all-inclusive care that
+covers laundry, dishes, appliances, steam cleaning, and fabric care under one simple monthly
+plan.
+We proudly serve all major Nairobi neighborhoods, including Lavington, Kileleshwa,
+Kilimani, Westlands, Runda, Karen, Parklands, and Lang’ata etc. ensuring every home we
+touch feels fresh, peaceful, and premium.
+Trusted by Nairobi homeowners | Built on quality, reliability, and care | 100% satisfaction
+guaranteed
+From laundry to steam-cleaning, Averra does it all twice a week.”
+Every detail. Every room. One flat fee.
           </p>
 
           {/* Animated Stats Section */}

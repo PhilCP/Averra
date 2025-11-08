@@ -21,11 +21,11 @@ export default function ContactSection() {
           className="bg-white/70 backdrop-blur-lg p-10 rounded-3xl border border-blue-100 shadow-lg flex flex-col justify-center"
         >
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Let’s Connect !
+            Let’s Make Your Home Shine
           </h2>
           <p className="text-gray-600 mb-10 text-lg leading-relaxed">
-            Have a question, need assistance, or want to book a cleaning?
-            Reach out we’d love to hear from you.
+           Have a question or ready to book your first cleaning?
+We’d love to help.
           </p>
 
           <ul className="space-y-5 text-gray-700 mb-10">
@@ -35,11 +35,11 @@ export default function ContactSection() {
             </li>
             <li className="flex items-center gap-3">
               <Phone className="text-blue-600 w-5 h-5" />
-              <span>+254 712 345 678</span>
+              <span>+254 769 344 703</span>
             </li>
             <li className="flex items-center gap-3">
               <Mail className="text-blue-600 w-5 h-5" />
-              <span>info@averracleaners.co.ke</span>
+              <span>hello@averracleaners.com</span>
             </li>
             <li className="flex items-center gap-3">
               <MapPin className="text-blue-600 w-5 h-5" />
