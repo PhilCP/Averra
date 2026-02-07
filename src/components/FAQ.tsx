@@ -1,101 +1,189 @@
-import { useState } from "react"
-import type { FC } from "react"
+"use client"
+
+import { useState, useMemo, type FC } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion"
+import { 
+  HelpCircle, 
+  Search, 
+  MessageCircle, 
+  ArrowRight, 
+  X,
+  ShieldCheck
+} from "lucide-react"
 
 const FAQ: FC = () => {
-  const [hovered, setHovered] = useState<"one" | "two" | null>(null)
+  const [searchQuery, setSearchQuery] = useState("")
+
+  const faqs = [
+    {
+      q: "What’s included in the monthly package?",
+      a: "Everything. From laundry and ironing to deep steam sanitation for kitchens and bathrooms. We provide 8 comprehensive sessions per month—no hidden fees, no exceptions."
+    },
+    {
+      q: "Can I choose my cleaning days?",
+      a: "Absolutely. We work around your lifestyle. Whether it's a Tuesday/Friday rhythm or weekends, our team synchronizes with your schedule."
+    },
+    {
+      q: "How do payments work?",
+      a: "Simple, transparent monthly billing. We accept Mobile Money (M-Pesa/Airtel), Cards, or Bank Transfers—all paid in advance for uninterrupted service."
+    },
+    {
+      q: "Do you bring your own supplies?",
+      a: "Yes. Our teams arrive fully equipped with industrial-grade steam cleaners and premium, eco-friendly detergents safe for pets and children."
+    },
+    {
+      q: "Is the staff vetted and safe?",
+      a: "Security is our priority. Every Averra cleaner undergoes rigorous background checks and continuous professional training to ensure your peace of mind."
+    }
+  ]
+
+  // Search Logic
+  const filteredFaqs = useMemo(() => {
+    return faqs.filter(faq => 
+      faq.q.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      faq.a.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  }, [searchQuery, faqs])
 
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 px-6 items-center">
-        {/* LEFT: FAQ content */}
-        <div>
-          <p className="text-sm text-primary tracking-widest uppercase mb-2">
-            FAQ
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 leading-snug">
-            Your Questions, Answered
-          </h2>
+    <section className="relative py-32 bg-white overflow-hidden">
+      {/* Background Decorative Text */}
+      <div className="absolute top-10 right-[-5%] text-[15vw] font-black text-slate-50 select-none pointer-events-none uppercase">
+        Questions
+      </div>
 
-          <Accordion type="single" collapsible className="w-full mb-10">
-            <AccordionItem value="item-1">
-              <AccordionTrigger>
-                What’s included in the monthly cleaning package?
-              </AccordionTrigger>
-              <AccordionContent>
-                Our monthly cleaning package covers everything — dishes, laundry, ironing, kitchen and bathroom deep cleaning, appliances, carpets, and more. You get 8 thorough cleanings per month (twice a week).
-              </AccordionContent>
-            </AccordionItem>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+        
+        {/* LEFT: Content & Search (7 Columns) */}
+        <div className="lg:col-span-7">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 bg-blue-400 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
+                <HelpCircle className="text-white w-5 h-5" />
+              </div>
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-blue-400">Support Hub</span>
+            </div>
+            
+            <h2 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tighter leading-[1.1] mb-8">
+              Common <br />Curiosities.
+            </h2>
 
-            <AccordionItem value="item-2">
-              <AccordionTrigger>Can I choose my cleaning days?</AccordionTrigger>
-              <AccordionContent>
-                Yes! You can select the days that best fit your schedule. We’re flexible and adjust to your preferred routine.
-              </AccordionContent>
-            </AccordionItem>
+            {/* Search Bar */}
+            <div className="relative max-w-md group">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-blue-400 transition-colors" size={18} />
+              <input 
+                type="text"
+                placeholder="Search keywords..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full bg-slate-50 border border-slate-100 rounded-2xl py-4 pl-12 pr-12 text-slate-900 outline-none focus:bg-white focus:ring-4 focus:ring-blue-500/5 focus:border-blue-500 transition-all shadow-sm"
+              />
+              {searchQuery && (
+                <button 
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 p-1"
+                >
+                  <X size={16} />
+                </button>
+              )}
+            </div>
+          </motion.div>
 
-            <AccordionItem value="item-3">
-              <AccordionTrigger>How do payments work?</AccordionTrigger>
-              <AccordionContent>
-                Payments are made monthly in advance through your preferred method — mobile money, card, or bank transfer. There are no hidden fees or add-ons.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-4">
-              <AccordionTrigger>Do you bring your own cleaning supplies?</AccordionTrigger>
-              <AccordionContent>
-                Absolutely! Our team brings high-quality, eco-friendly cleaning products and professional tools to every visit.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="item-5">
-              <AccordionTrigger>What if I’m not satisfied with the service?</AccordionTrigger>
-              <AccordionContent>
-                Your satisfaction is guaranteed. If you’re not happy, we’ll schedule a free re-clean or resolve the issue promptly.
-              </AccordionContent>
-            </AccordionItem>
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            <AnimatePresence mode="popLayout">
+              {filteredFaqs.length > 0 ? (
+                filteredFaqs.map((faq, i) => (
+                  <motion.div
+                    key={faq.q}
+                    layout
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    <AccordionItem 
+                      value={`item-${i}`}
+                      className="border-none bg-slate-50 rounded-[2rem] px-8 transition-all data-[state=open]:bg-white data-[state=open]:shadow-2xl data-[state=open]:shadow-blue-900/5"
+                    >
+                      <AccordionTrigger className="text-left text-lg font-bold text-slate-900 py-6 hover:no-underline hover:text-blue-400 transition-colors">
+                        {faq.q}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-slate-500 text-base leading-relaxed pb-6">
+                        {faq.a}
+                      </AccordionContent>
+                    </AccordionItem>
+                  </motion.div>
+                ))
+              ) : (
+                <div className="text-center py-12 bg-slate-50 rounded-[2rem]">
+                   <p className="text-slate-400 italic">No matching results found for "{searchQuery}"</p>
+                </div>
+              )}
+            </AnimatePresence>
           </Accordion>
-        </div>
 
-        {/* RIGHT: Layered Images with Hover Interaction */}
-        <div className="relative w-full flex justify-center items-center">
-          {/* Decorative glows */}
-          <div className="absolute top-0 left-0 w-10 h-10 bg-amber-400 rounded-full blur-xl opacity-30" />
-          <div className="absolute bottom-10 right-6 w-14 h-14 bg-amber-400 rounded-full blur-2xl opacity-20" />
-
-          {/* Image 1 */}
-          <div
-            onMouseEnter={() => setHovered("one")}
-            onMouseLeave={() => setHovered(null)}
-            className={`absolute top-8 left-10 w-2/3 rounded-3xl overflow-hidden shadow-lg border-4 border-white transition-all duration-500
-              ${hovered === "one" ? "z-20 scale-105 rotate-0" : "z-0 rotate-[-2deg]"}`}
-          >
-            <img
-              src="/averra-hero.jpg"
-              alt="Cleaning background"
-              className="object-cover w-full h-[220px] transition-transform duration-500"
-            />
-          </div>
-
-          {/* Image 2 */}
-          <div
-            onMouseEnter={() => setHovered("two")}
-            onMouseLeave={() => setHovered(null)}
-            className={`relative w-3/4 rounded-3xl overflow-hidden shadow-2xl border-4 border-white transition-all duration-500
-              ${hovered === "two" ? "z-20 scale-105 rotate-0" : "z-10 rotate-[2deg]"}`}
-          >
-            <img
-              src="/averra-hero.jpg"
-              alt="Cleaning detail"
-              className="object-cover w-full h-[260px] transition-transform duration-500"
-            />
+          {/* Quick Contact Banner */}
+          <div className="mt-12 p-8 bg-slate-900 rounded-[2.5rem] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl">
+            <div className="flex items-center gap-4 text-white">
+              <MessageCircle className="w-8 h-8 text-blue-400" />
+              <div className="text-center sm:text-left">
+                <p className="font-bold text-lg leading-tight">Can't find an answer?</p>
+                <p className="text-slate-400 font-medium text-sm">Our concierge team is standing by.</p>
+              </div>
+            </div>
+            <button className="bg-blue-400 text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-white hover:text-blue-400 transition-all flex items-center gap-2 shrink-0">
+              Get in touch <ArrowRight size={16} />
+            </button>
           </div>
         </div>
+
+        {/* RIGHT: Constant Visual Image (5 Columns) */}
+        <div className="lg:col-span-5 sticky top-32 hidden lg:block">
+          <div className="relative group">
+            {/* Main Image Frame */}
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white z-10"
+            >
+              <img
+                src="/cleaning-1.jpg" 
+                alt="Professional Averra Service"
+                className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
+              
+              {/* Overlay Badge */}
+              <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20">
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 bg-blue-400 rounded-2xl flex items-center justify-center">
+                    <ShieldCheck className="text-white" size={24} />
+                  </div>
+                  <div>
+                    <p className="text-white font-bold tracking-tight">Vetted Staff</p>
+                    <p className="text-blue-100 text-xs font-medium">100% Secure & Reliable</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Decorative Floating Blobs */}
+            <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full blur-[80px] opacity-60 -z-10" />
+            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-sky-100 rounded-full blur-[80px] opacity-60 -z-10" />
+          </div>
+        </div>
+
       </div>
     </section>
   )
