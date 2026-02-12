@@ -1,0 +1,271 @@
+{
+  "home": "Accueil",
+  "about": "À propos",
+  "pricing": "Tarifs",
+  "service": "Service",
+  "contact": "Contact",
+  "login": "Connexion",
+  "signup": "S'inscrire",
+  "hero": {
+    "title": "Espaces Étincelants",
+    "subtitle": "Profitez d'un espace impeccable avec notre équipe de nettoyage experte. Abordable, écologique et adapté à vos besoins !",
+    "cta": "Réserver le service de nettoyage"
+  },
+  
+  "about1": {
+    "subtitle": "À propos d'Averra Cleaners",
+    "title": "Une maison propre, une vie meilleure",
+    "description": "Chez Averra Cleaners, nous redéfinissons le nettoyage à domicile à Nairobi. Notre équipe fournit un service résidentiel incluant la lessive, la vaisselle, les appareils, le nettoyage à la vapeur et l'entretien des tissus sous un simple plan mensuel.",
+    "stats": {
+      "layouts": "Espaces Nettoyés",
+      "projects": "Projets Réalisés"
+    }
+  },
+  "services": {
+    "header": "La Norme Averra",
+    "title": {
+      "main": "Tout inclus.",
+      "sub": "Rien n'est oublié."
+    },
+    "description": "Un plan de nettoyage complet conçu pour maintenir une résidence impeccable sans options complexes ni frais cachés.",
+    "core": {
+      "title": "Essentiels de Base",
+      "description": "Soins quotidiens pour maintenir l’harmonie de votre maison.",
+      "items": ["Entretien de la vaisselle et du linge", "Dépoussiérage et lavage léger", "Organisation légère"]
+    },
+    "deep": {
+      "title": "Sanitation Profonde",
+      "description": "Hygiène de niveau chirurgical pour les zones les plus importantes.",
+      "items": ["Désinfection à la vapeur", "Détail des appareils", "Nettoyage complet de la maison"]
+    },
+    "textile": {
+      "title": "Luxe Textile",
+      "description": "Restaurer la sensation originale de votre mobilier haut de gamme.",
+      "items": ["Nettoyage en profondeur des tapis et canapés", "Hygiène des matelas", "Détail des tissus"]
+    }
+  },
+  
+  "pricing1": {
+    "header": "Tarifs & Services",
+    "title": "Nettoyage, bien fait",
+    "description": "Solutions sur mesure pour particuliers, entreprises et institutions publiques.",
+    "toggle": {
+      "kenya": "Kenya",
+      "drc": "RDC"
+    },
+    "kenyaPlans": [
+      { "type": "Studio", "price": "Ksh 5,000", "desc": "Parfait pour un espace moderne compact avec service complet." },
+      { "type": "1 Bedroom", "price": "Ksh 8,000", "desc": "Nettoyage équilibré avec blanchisserie et vapeur." },
+      { "type": "2 Bedroom", "price": "Ksh 13,000", "desc": "Entretien en profondeur des tissus, tapis et organisation." },
+      { "type": "3 Bedroom", "price": "Ksh 18,000", "desc": "Entretien premium incluant les appareils." },
+      { "type": "4 Bedroom", "price": "Ksh 23,500", "desc": "Service familial avec repassage et désinfection complète." },
+      { "type": "5 Bedroom", "price": "Ksh 25,000", "desc": "Couverture luxe pour grandes résidences." }
+    ],
+    "kenyaIncludes": [
+      "Blanchisserie, vaisselle & repassage",
+      "Nettoyage vapeur cuisine & salle de bain",
+      "Entretien tapis, canapé & matelas",
+      "Détail des appareils",
+      "Dépoussiérage, lavage & désinfection",
+      "Organisation légère & préparation des lits"
+    ],
+    "everyPlanIncludes": "Chaque plan inclut",
+    "everyPlanDescription": "Contrôles qualité standard et fournitures écologiques fournis par notre équipe spécialisée.",
+    "drc": {
+      "services": [
+        {
+          "title": "Particuliers",
+          "items": [
+            "Maisons & appartements",
+            "Grand ménage complet",
+            "Vitres, sols & désinfection",
+            "Repassage & linge"
+          ]
+        },
+        {
+          "title": "Entreprises",
+          "items": [
+            "Bureaux & espaces communs",
+            "Institutions, ONG & écoles",
+            "Contrats mensuels fixes",
+            "Suivi qualité rigoureux"
+          ]
+        },
+        {
+          "title": "Spécialisé",
+          "items": [
+            "Après travaux / chantiers",
+            "Événements & réceptions",
+            "Nettoyage en profondeur",
+            "Désinfection zones sensibles"
+          ]
+        }
+      ],
+      "pricing": [
+        { "title": "Bureaux", "price": "40 – 300 $" },
+        { "title": "Écoles", "price": "150 – 1.000 $" },
+        { "title": "Hôtels", "price": "200 – 1.500 $" },
+        { "title": "Restaurants", "price": "120 – 700 $" }
+      ],
+      "contact": {
+        "office": "Bureau de Kolwezi",
+        "address": "2222 Avenue Maduda, Commune Dilala",
+        "phone": "+243 998 723 522"
+      }
+    }
+  },
+  
+  "testimonials": [
+    {
+      "name": "Grace M.",
+      "role": "Kilimani",
+      "message": "Averra Cleaners a complètement transformé ma maison. Ils gèrent tout — même mon four et mon canapé ont l'air neufs chaque semaine.",
+      "image": "/av.jpg"
+    },
+    {
+      "name": "Brian K.",
+      "role": "Lavington",
+      "message": "Ils sont constants, professionnels, et ma maison n'a jamais été aussi fraîche.",
+      "image": "/averra-hero.jpg"
+    },
+    {
+      "name": "Sylvia N.",
+      "role": "Westlands",
+      "message": "Depuis que j'ai engagé Averra Cleaners, je suis impatiente de rentrer chez moi. Tout est impeccable, et ils prennent soin des petits détails que j'oublie toujours.",
+      "image": "/av.jpg"
+    },
+    {
+      "name": "Michael O.",
+      "role": "Parklands",
+      "message": "L'équipe d'Averra Cleaners est incroyable ! Ponctuelle, minutieuse et très sympathique. Ma maison n'a jamais été aussi propre.",
+      "image": "/averra-hero.jpg"
+    },
+    {
+      "name": "Faith W.",
+      "role": "Kilimani",
+      "message": "J'adore qu'ils proposent un forfait complet. Du linge au nettoyage en profondeur, ils facilitent tellement ma vie.",
+      "image": "/av.jpg"
+    },
+    {
+      "name": "James T.",
+      "role": "Lavington",
+      "message": "Averra Cleaners vaut chaque centime. Ils sont fiables, minutieux, et ma maison sent toujours bon et accueillante.",
+      "image": "/averra-hero.jpg"
+    },
+    {
+      "name": "Rachel A.",
+      "role": "Westlands",
+      "message": "Le professionnalisme et le soin qu'ils montrent sont incomparables. Même mes tapis et rideaux ont l'air neufs !",
+      "image": "/av.jpg"
+    }
+  ],
+  "header": "Témoignages",
+  "title": "Ce que nos clients disent",
+  "prev": "← Précédent",
+  "next": "Suivant →",
+  
+  "contact2": {
+    "header": "Contactez-nous",
+    "title": "Commençons quelque chose de frais.",
+    "subtitle": "Que ce soit un studio à Nairobi ou un bureau à Kolwezi, nous apportons des standards de classe mondiale à votre porte.",
+    "tabs": {
+      "kenya": "Kenya",
+      "drc": "RDC"
+    },
+    "callUs": "Appelez-nous",
+    "emailUs": "Email",
+    "phone": {
+      "kenya": "+254 769 344 703",
+      "drc": "+243 998 723 522"
+    },
+    "email": "hello@averracleaners.com",
+    "fastResponse": "Réponse rapide",
+    "fastResponseDesc": "Nous répondons généralement sous 2 heures.",
+    "followUs": "Suivez-nous:",
+    "form": {
+      "header": "Envoyer une demande",
+      "fullName": "Nom complet",
+      "emailAddress": "Adresse e-mail",
+      "serviceCategory": "Catégorie de service",
+      "message": "Message",
+      "submit": "Envoyer",
+      "services": [
+        "Nettoyage résidentiel",
+        "Nettoyage commercial/bureau",
+        "Post-construction",
+        "Assainissement spécialisé"
+      ]
+    }
+  },
+  
+  "faq": {
+    "badge": "Centre d'Assistance",
+    "title_part1": "Curiosités",
+    "title_part2": "Communes.",
+    "bg_text": "Questions",
+    "search_placeholder": "Rechercher des mots-clés...",
+    "no_results": "Aucun résultat trouvé pour \"{{query}}\"",
+    "cta": {
+      "title": "Vous ne trouvez pas de réponse ?",
+      "subtitle": "Notre équipe de conciergerie est à votre disposition.",
+      "button": "Contactez-nous"
+    },
+    "vetted_badge": {
+      "title": "Personnel Vérifié",
+      "subtitle": "100% Sûr et Fiable"
+    },
+    "questions": [
+      {
+        "q": "Qu'est-ce qui est inclus dans le forfait mensuel ?",
+        "a": "Tout. De la lessive et du repassage à la désinfection en profondeur à la vapeur des cuisines et salles de bain. Nous proposons 8 séances complètes par mois—pas de frais cachés, aucune exception."
+      },
+      {
+        "q": "Puis-je choisir mes jours de ménage ?",
+        "a": "Absolument. Nous nous adaptons à votre style de vie. Qu'il s'agisse d'un rythme mardi/vendredi ou des week-ends, notre équipe se synchronise avec votre emploi du temps."
+      },
+      {
+        "q": "Comment fonctionnent les paiements ?",
+        "a": "Une facturation mensuelle simple et transparente. Nous acceptons Mobile Money (M-Pesa/Airtel), les cartes ou les virements bancaires—le tout payé à l'avance pour un service ininterrompu."
+      },
+      {
+        "q": "Apportez-vous vos propres fournitures ?",
+        "a": "Oui. Nos équipes arrivent entièrement équipées de nettoyeurs à vapeur de qualité industrielle et de détergents écologiques haut de gamme sans danger pour les animaux et les enfants."
+      },
+      {
+        "q": "Le personnel est-il vérifié et sûr ?",
+        "a": "La sécurité est notre priorité. Chaque nettoyeur Averra subit des vérifications d'antécédents rigoureuses et une formation professionnelle continue pour garantir votre tranquillité d'esprit."
+      }
+    ]
+  },
+  
+  "cta": {
+    "title": "Prêt à vivre un avenir plus propre ?",
+    "description": "Rejoignez des centaines de clients satisfaits qui ont sublimé leurs espaces grâce à nos solutions de nettoyage professionnel. Faisons briller votre monde.",
+    "button": "Commencer"
+  },
+  "footer": {
+    "brand": "Averra Cleaners",
+    "description": "Services de nettoyage premium pour maisons et bureaux à Nairobi. Résultats fiables, professionnels et impeccables à chaque fois.",
+    "book_button": "Réserver un nettoyage",
+    "contact_title": "Contactez-nous",
+    "location": "Kilimani, Nairobi",
+    "links_title": "Liens Rapides",
+    "links": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "services": "Services",
+      "pricing": "Tarifs",
+      "contact": "Contact"
+    },
+    "copyright": "© {{year}} Averra Cleaners Ltd. Tous droits réservés."
+  }
+}
+
+
+
+
+
+
+
+
+

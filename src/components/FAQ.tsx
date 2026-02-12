@@ -2,6 +2,7 @@
 
 import { useState, useMemo, type FC } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { useTranslation } from "react-i18next" // Import hook
 import {
   Accordion,
   AccordionContent,
@@ -18,32 +19,14 @@ import {
 } from "lucide-react"
 
 const FAQ: FC = () => {
+  const { t } = useTranslation()
   const [searchQuery, setSearchQuery] = useState("")
 
-  const faqs = [
-    {
-      q: "What’s included in the monthly package?",
-      a: "Everything. From laundry and ironing to deep steam sanitation for kitchens and bathrooms. We provide 8 comprehensive sessions per month—no hidden fees, no exceptions."
-    },
-    {
-      q: "Can I choose my cleaning days?",
-      a: "Absolutely. We work around your lifestyle. Whether it's a Tuesday/Friday rhythm or weekends, our team synchronizes with your schedule."
-    },
-    {
-      q: "How do payments work?",
-      a: "Simple, transparent monthly billing. We accept Mobile Money (M-Pesa/Airtel), Cards, or Bank Transfers—all paid in advance for uninterrupted service."
-    },
-    {
-      q: "Do you bring your own supplies?",
-      a: "Yes. Our teams arrive fully equipped with industrial-grade steam cleaners and premium, eco-friendly detergents safe for pets and children."
-    },
-    {
-      q: "Is the staff vetted and safe?",
-      a: "Security is our priority. Every Averra cleaner undergoes rigorous background checks and continuous professional training to ensure your peace of mind."
-    }
-  ]
+  // Map the JSON array from our translation files
+  const faqs = useMemo(() => {
+    return t('faq.questions', { returnObjects: true }) as Array<{ q: string, a: string }>
+  }, [t])
 
-  // Search Logic
   const filteredFaqs = useMemo(() => {
     return faqs.filter(faq => 
       faq.q.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -55,12 +38,11 @@ const FAQ: FC = () => {
     <section className="relative py-32 bg-white overflow-hidden">
       {/* Background Decorative Text */}
       <div className="absolute top-10 right-[-5%] text-[15vw] font-black text-slate-50 select-none pointer-events-none uppercase">
-        Questions
+        {t('faq.bg_text')}
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
         
-        {/* LEFT: Content & Search (7 Columns) */}
         <div className="lg:col-span-7">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -72,11 +54,13 @@ const FAQ: FC = () => {
               <div className="w-10 h-10 bg-blue-400 rounded-xl flex items-center justify-center shadow-lg shadow-blue-200">
                 <HelpCircle className="text-white w-5 h-5" />
               </div>
-              <span className="text-xs font-black uppercase tracking-[0.3em] text-blue-400">Support Hub</span>
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-blue-400">
+                {t('faq.badge')}
+              </span>
             </div>
             
             <h2 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tighter leading-[1.1] mb-8">
-              Common <br />Curiosities.
+              {t('faq.title_part1')} <br />{t('faq.title_part2')}
             </h2>
 
             {/* Search Bar */}
@@ -84,7 +68,7 @@ const FAQ: FC = () => {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-blue-400 transition-colors" size={18} />
               <input 
                 type="text"
-                placeholder="Search keywords..."
+                placeholder={t('faq.search_placeholder')}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full bg-slate-50 border border-slate-100 rounded-2xl py-4 pl-12 pr-12 text-slate-900 outline-none focus:bg-white focus:ring-4 focus:ring-blue-500/5 focus:border-blue-500 transition-all shadow-sm"
@@ -126,7 +110,9 @@ const FAQ: FC = () => {
                 ))
               ) : (
                 <div className="text-center py-12 bg-slate-50 rounded-[2rem]">
-                   <p className="text-slate-400 italic">No matching results found for "{searchQuery}"</p>
+                   <p className="text-slate-400 italic">
+                     {t('faq.no_results', { query: searchQuery })}
+                   </p>
                 </div>
               )}
             </AnimatePresence>
@@ -137,20 +123,19 @@ const FAQ: FC = () => {
             <div className="flex items-center gap-4 text-white">
               <MessageCircle className="w-8 h-8 text-blue-400" />
               <div className="text-center sm:text-left">
-                <p className="font-bold text-lg leading-tight">Can't find an answer?</p>
-                <p className="text-slate-400 font-medium text-sm">Our concierge team is standing by.</p>
+                <p className="font-bold text-lg leading-tight">{t('faq.cta.title')}</p>
+                <p className="text-slate-400 font-medium text-sm">{t('faq.cta.subtitle')}</p>
               </div>
             </div>
             <button className="bg-blue-400 text-white px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-white hover:text-blue-400 transition-all flex items-center gap-2 shrink-0">
-              Get in touch <ArrowRight size={16} />
+              {t('faq.cta.button')} <ArrowRight size={16} />
             </button>
           </div>
         </div>
 
-        {/* RIGHT: Constant Visual Image (5 Columns) */}
+        {/* RIGHT Side */}
         <div className="lg:col-span-5 sticky top-32 hidden lg:block">
           <div className="relative group">
-            {/* Main Image Frame */}
             <motion.div 
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
@@ -159,31 +144,25 @@ const FAQ: FC = () => {
             >
               <img
                 src="/cleaning-1.jpg" 
-                alt="Professional Averra Service"
+                alt="Service"
                 className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent" />
               
-              {/* Overlay Badge */}
               <div className="absolute bottom-8 left-8 right-8 bg-white/10 backdrop-blur-xl p-6 rounded-3xl border border-white/20">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-blue-400 rounded-2xl flex items-center justify-center">
                     <ShieldCheck className="text-white" size={24} />
                   </div>
                   <div>
-                    <p className="text-white font-bold tracking-tight">Vetted Staff</p>
-                    <p className="text-blue-100 text-xs font-medium">100% Secure & Reliable</p>
+                    <p className="text-white font-bold tracking-tight">{t('faq.vetted_badge.title')}</p>
+                    <p className="text-blue-100 text-xs font-medium">{t('faq.vetted_badge.subtitle')}</p>
                   </div>
                 </div>
               </div>
             </motion.div>
-
-            {/* Decorative Floating Blobs */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-blue-100 rounded-full blur-[80px] opacity-60 -z-10" />
-            <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-sky-100 rounded-full blur-[80px] opacity-60 -z-10" />
           </div>
         </div>
-
       </div>
     </section>
   )

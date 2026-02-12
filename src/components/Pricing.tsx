@@ -14,74 +14,63 @@ import {
   MapPin,
   Phone,
 } from "lucide-react"
+import { useTranslation } from "react-i18next"
 
+// ======= Types =======
+type KenyaPlan = {
+  type: string
+  price: string
+  desc: string
+}
+
+type ServiceItem = {
+  icon: React.ComponentType<{ className?: string }>
+  title: string
+  items: string[]
+}
+
+type PricingItem = {
+  icon: React.ComponentType<{ className?: string }>
+  title: string
+  price: string
+}
+
+type ContactInfo = {
+  office: string
+  address: string
+  phone: string
+}
+
+// ======= Component =======
 export default function Pricing() {
+  const { t } = useTranslation()
   const [region, setRegion] = useState<"kenya" | "drc">("kenya")
 
-  /* =======================
-        KENYA – DATA
-  ======================= */
-  const kenyaPlans = [
-    { type: "Studio", price: "Ksh 5,000", desc: "Perfect for compact modern living with full-service care." },
-    { type: "1 Bedroom", price: "Ksh 8,000", desc: "Balanced lifestyle cleaning with laundry & steam sanitation." },
-    { type: "2 Bedroom", price: "Ksh 13,000", desc: "Deep care including fabrics, carpets & organization." },
-    { type: "3 Bedroom", price: "Ksh 18,000", desc: "Premium apartment care with appliance detailing." },
-    { type: "4 Bedroom", price: "Ksh 23,500", desc: "Family-scale service with ironing & full sanitation." },
-    { type: "5 Bedroom", price: "Ksh 25,000", desc: "Luxury coverage for large residences." },
+  // ======= Helpers for typing i18n =======
+  const tArray = (key: string) => t(key, { returnObjects: true }) as string[]
+  const tObj = <T extends object>(key: string) => t(key, { returnObjects: true }) as T
+
+  // ======= Kenya =======
+  const kenyaPlans: KenyaPlan[] = tObj<KenyaPlan[]>("pricing1.kenyaPlans")
+  const kenyaIncludes: string[] = tArray("pricing1.kenyaIncludes")
+
+  // ======= DRC =======
+  const drcServices: ServiceItem[] = [
+    { icon: Home, title: t("pricing1.drc.services.0.title"), items: tArray("pricing1.drc.services.0.items") },
+    { icon: Building2, title: t("pricing1.drc.services.1.title"), items: tArray("pricing1.drc.services.1.items") },
+    { icon: Sparkles, title: t("pricing1.drc.services.2.title"), items: tArray("pricing1.drc.services.2.items") },
   ]
 
-  const kenyaIncludes = [
-    "Laundry, dishes & ironing",
-    "Kitchen & bathroom steam cleaning",
-    "Carpet, sofa & mattress care",
-    "Appliance detailing",
-    "Dusting, mopping & sanitizing",
-    "Light organization & bed making",
+  const drcPricing: PricingItem[] = [
+    { icon: Briefcase, title: t("pricing1.drc.pricing.0.title"), price: t("pricing1.drc.pricing.0.price") },
+    { icon: GraduationCap, title: t("pricing1.drc.pricing.1.title"), price: t("pricing1.drc.pricing.1.price") },
+    { icon: Hotel, title: t("pricing1.drc.pricing.2.title"), price: t("pricing1.drc.pricing.2.price") },
+    { icon: Utensils, title: t("pricing1.drc.pricing.3.title"), price: t("pricing1.drc.pricing.3.price") },
   ]
 
-  /* =======================
-        DRC – DATA
-  ======================= */
-  const drcServices = [
-    {
-      icon: Home,
-      title: "Particuliers",
-      items: [
-        "Maisons & appartements",
-        "Grand ménage complet",
-        "Vitres, sols & désinfection",
-        "Repassage & linge",
-      ],
-    },
-    {
-      icon: Building2,
-      title: "Entreprises",
-      items: [
-        "Bureaux & espaces communs",
-        "Institutions, ONG & écoles",
-        "Contrats mensuels fixes",
-        "Suivi qualité rigoureux",
-      ],
-    },
-    {
-      icon: Sparkles,
-      title: "Spécialisé",
-      items: [
-        "Après travaux / chantiers",
-        "Événements & réceptions",
-        "Nettoyage en profondeur",
-        "Désinfection zones sensibles",
-      ],
-    },
-  ]
+  const drcContact: ContactInfo = tObj<ContactInfo>("pricing1.drc.contact")
 
-  const drcPricing = [
-    { icon: Briefcase, title: "Bureaux", price: "40 – 300 $" },
-    { icon: GraduationCap, title: "Écoles", price: "150 – 1.000 $" },
-    { icon: Hotel, title: "Hôtels", price: "200 – 1.500 $" },
-    { icon: Utensils, title: "Restaurants", price: "120 – 700 $" },
-  ]
-
+  // ======= Render =======
   return (
     <section id="pricing" className="relative py-24 bg-slate-50 overflow-hidden">
       {/* Background elements */}
@@ -94,13 +83,13 @@ export default function Pricing() {
         {/* Header */}
         <div className="text-center mb-16">
           <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-4 py-2 rounded-full mb-4 inline-block">
-            Pricing & Services
+            {t("pricing1.header")}
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-            Cleaning, Done Properly
+            {t("pricing1.title")}
           </h2>
           <p className="text-slate-600 max-w-xl mx-auto">
-            Solutions sur mesure pour particuliers, entreprises et institutions publiques.
+            {t("pricing1.description")}
           </p>
 
           {/* Toggle Button */}
@@ -112,7 +101,7 @@ export default function Pricing() {
                   region === "kenya" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
                 }`}
               >
-                Kenya
+                {t("pricing1.toggle.kenya")}
               </button>
               <button
                 onClick={() => setRegion("drc")}
@@ -120,7 +109,7 @@ export default function Pricing() {
                   region === "drc" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
                 }`}
               >
-                DRC
+                {t("pricing1.toggle.drc")}
               </button>
             </div>
           </div>
@@ -135,6 +124,7 @@ export default function Pricing() {
               exit={{ opacity: 0, scale: 0.98 }}
               className="space-y-12"
             >
+              {/* Kenya Plans */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {kenyaPlans.map((plan, i) => (
                   <div key={i} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex flex-col h-full hover:border-sky-200 transition-colors">
@@ -144,14 +134,16 @@ export default function Pricing() {
                   </div>
                 ))}
               </div>
+
+              {/* Kenya Includes */}
               <div className="bg-sky-900 rounded-[2.5rem] p-10 md:p-14 text-white">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
                   <div className="max-w-md">
                     <div className="w-12 h-12 bg-sky-500/20 rounded-2xl flex items-center justify-center mb-6">
                       <Sparkles className="text-sky-400" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-4">Every Plan Includes</h3>
-                    <p className="text-sky-200/70">Standard quality checks and eco-friendly supplies provided by our specialized team.</p>
+                    <h3 className="text-2xl font-bold mb-4">{t("pricing1.everyPlanIncludes")}</h3>
+                    <p className="text-sky-200/70">{t("pricing1.everyPlanDescription")}</p>
                   </div>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-4 text-sm font-medium">
                     {kenyaIncludes.map((item, i) => (
@@ -174,7 +166,7 @@ export default function Pricing() {
               exit={{ opacity: 0, scale: 0.98 }}
               className="space-y-12"
             >
-              {/* DRC Main Categories */}
+              {/* DRC Services */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {drcServices.map((service, i) => (
                   <div key={i} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm flex flex-col h-full">
@@ -196,7 +188,7 @@ export default function Pricing() {
                 ))}
               </div>
 
-              {/* DRC Compact Pricing */}
+              {/* DRC Pricing */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {drcPricing.map((p, i) => (
                   <div key={i} className="group bg-slate-900 hover:bg-slate-800 transition-all p-5 rounded-2xl border border-white/5 flex items-center gap-4">
@@ -211,21 +203,21 @@ export default function Pricing() {
                 ))}
               </div>
 
-              {/* Contact Footer for DRC */}
+              {/* DRC Contact */}
               <div className="bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-orange-50 rounded-full flex items-center justify-center">
                     <MapPin className="text-orange-600 w-5 h-5" />
                   </div>
                   <div className="text-left">
-                    <h4 className="font-bold text-slate-900">Kolwezi Office</h4>
-                    <p className="text-sm text-slate-500">2222 Avenue Maduda, Commune Dilala</p>
+                    <h4 className="font-bold text-slate-900">{drcContact.office}</h4>
+                    <p className="text-sm text-slate-500">{drcContact.address}</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
                    <div className="flex items-center gap-3 bg-slate-50 px-5 py-3 rounded-2xl border border-slate-100">
                       <Phone className="w-4 h-4 text-blue-400" />
-                      <span className="text-sm font-bold text-slate-700">+243 998 723 522</span>
+                      <span className="text-sm font-bold text-slate-700">{drcContact.phone}</span>
                    </div>
                 </div>
               </div>

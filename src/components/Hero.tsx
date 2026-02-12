@@ -2,8 +2,11 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+
   // Smooth scroll handler
   const scrollToContact = () => {
     const contactSection = document.getElementById("contact");
@@ -29,13 +32,12 @@ export default function Hero() {
       >
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 tracking-tight mb-4 -mt-46">
-          Sparkling Spaces
+          {t("hero.title")}
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg md:text-lg text-gray-500 leading-relaxed mb-8">
-          Enjoy a spotless space with our expert cleaning team. Affordable,
-          eco-friendly, and tailored to your needs!
+          {t("hero.subtitle")}
         </p>
 
         {/* CTA Button */}
@@ -43,7 +45,7 @@ export default function Hero() {
           onClick={scrollToContact}
           className="bg-primary hover:bg-primary/90 text-white rounded-full transition px-6 py-2 text-lg hover:scale-105"
         >
-          Book Cleaning Service
+          {t("hero.cta")}
         </Button>
       </motion.div>
 

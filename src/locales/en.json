@@ -1,0 +1,260 @@
+{
+  "home": "Home",
+  "about": "About",
+  "pricing": "Pricing",
+  "service": "Service",
+  "contact": "Contact",
+  "login": "Login",
+  "signup": "Sign Up",
+  "hero": {
+    "title": "Sparkling Spaces",
+    "subtitle": "Enjoy a spotless space with our expert cleaning team. Affordable, eco-friendly, and tailored to your needs!",
+    "cta": "Book Cleaning Service"
+  },
+  "about1": {
+    "subtitle": "About Averra Cleaners",
+    "title": "A Clean Home is a Better Life",
+    "description": "At Averra Cleaners, we’re redefining home cleaning in Nairobi. Our team delivers residential and laundry, dishes, appliances, steam cleaning, and fabric care under one simple monthly plan.",
+    "stats": {
+      "layouts": "Layouts Cleaned",
+      "projects": "Projects Completed"
+    }
+  },
+  "services": {
+    "header": "The Averra Standard",
+    "title": {
+      "main": "Everything included.",
+      "sub": "Nothing overlooked."
+    },
+    "description": "A comprehensive cleaning plan designed to maintain a spotless residence without complex add-ons or hidden fees.",
+    "core": {
+      "title": "Core Essentials",
+      "description": "Daily living care that keeps the rhythm of your home perfect.",
+      "items": ["Dishes & Laundry Care", "Surface Dusting & Mopping", "Light Organization"]
+    },
+    "deep": {
+      "title": "Deep Sanitation",
+      "description": "Surgical-level hygiene for the most important areas.",
+      "items": ["Steam Sanitization", "Appliance Detailing", "Full Home Sanitizing"]
+    },
+    "textile": {
+      "title": "Textile Luxury",
+      "description": "Restoring the original feel of your premium upholstery.",
+      "items": ["Carpet & Sofa Deep Clean", "Mattress Hygiene", "Fabric Detailing"]
+    }
+  },
+  "pricing1": {
+    "header": "Pricing & Services",
+    "title": "Cleaning, Done Properly",
+    "description": "Tailored solutions for homes, businesses, and public institutions.",
+    "toggle": {
+      "kenya": "Kenya",
+      "drc": "DRC"
+    },
+    "kenyaPlans": [
+      { "type": "Studio", "price": "Ksh 5,000", "desc": "Perfect for compact modern living with full-service care." },
+      { "type": "1 Bedroom", "price": "Ksh 8,000", "desc": "Balanced lifestyle cleaning with laundry & steam sanitation." },
+      { "type": "2 Bedroom", "price": "Ksh 13,000", "desc": "Deep care including fabrics, carpets & organization." },
+      { "type": "3 Bedroom", "price": "Ksh 18,000", "desc": "Premium apartment care with appliance detailing." },
+      { "type": "4 Bedroom", "price": "Ksh 23,500", "desc": "Family-scale service with ironing & full sanitation." },
+      { "type": "5 Bedroom", "price": "Ksh 25,000", "desc": "Luxury coverage for large residences." }
+    ],
+    "kenyaIncludes": [
+      "Laundry, dishes & ironing",
+      "Kitchen & bathroom steam cleaning",
+      "Carpet, sofa & mattress care",
+      "Appliance detailing",
+      "Dusting, mopping & sanitizing",
+      "Light organization & bed making"
+    ],
+    "everyPlanIncludes": "Every Plan Includes",
+    "everyPlanDescription": "Standard quality checks and eco-friendly supplies provided by our specialized team.",
+    "drc": {
+      "services": [
+        {
+          "title": "Individuals",
+          "items": [
+            "Houses & apartments",
+            "Full deep cleaning",
+            "Windows, floors & disinfection",
+            "Laundry & ironing"
+          ]
+        },
+        {
+          "title": "Businesses",
+          "items": [
+            "Offices & common areas",
+            "Institutions, NGOs & schools",
+            "Fixed monthly contracts",
+            "Strict quality checks"
+          ]
+        },
+        {
+          "title": "Specialized",
+          "items": [
+            "Post-construction / renovation",
+            "Events & receptions",
+            "Deep cleaning",
+            "Sensitive area disinfection"
+          ]
+        }
+      ],
+      "pricing": [
+        { "title": "Offices", "price": "40 – 300 $" },
+        { "title": "Schools", "price": "150 – 1,000 $" },
+        { "title": "Hotels", "price": "200 – 1,500 $" },
+        { "title": "Restaurants", "price": "120 – 700 $" }
+      ],
+      "contact": {
+        "office": "Kolwezi Office",
+        "address": "2222 Avenue Maduda, Commune Dilala",
+        "phone": "+243 998 723 522"
+      }
+    }
+  },
+  "testimonials": [
+    {
+      "name": "Grace M.",
+      "role": "Kilimani",
+      "message": "Averra Cleaners has completely transformed my home. They handle everything — even my oven and couch look brand new every week.",
+      "image": "/av.jpg"
+    },
+    {
+      "name": "Brian K.",
+      "role": "Lavington",
+      "message": "They’re consistent, professional, and my home has never felt this fresh.",
+      "image": "/averra-hero.jpg"
+    },
+    {
+      "name": "Sylvia N.",
+      "role": "Westlands",
+      "message": "Since hiring Averra Cleaners, I actually look forward to coming home. Everything is spotless, and they take care of the little things I always forget.",
+      "image": "/av.jpg"
+    },
+    {
+      "name": "Michael O.",
+      "role": "Parklands",
+      "message": "The team at Averra Cleaners is amazing! Punctual, thorough, and very friendly. My home has never been cleaner.",
+      "image": "/averra-hero.jpg"
+    },
+    {
+      "name": "Faith W.",
+      "role": "Kilimani",
+      "message": "I love that they offer a full-service package. From laundry to deep cleaning, they make my life so much easier.",
+      "image": "/av.jpg"
+    },
+    {
+      "name": "James T.",
+      "role": "Lavington",
+      "message": "Averra Cleaners is worth every penny. They’re reliable, detail-oriented, and my home always smells fresh and inviting.",
+      "image": "/averra-hero.jpg"
+    },
+    {
+      "name": "Rachel A.",
+      "role": "Westlands",
+      "message": "The professionalism and care they show are unmatched. Even my carpets and curtains look brand new!",
+      "image": "/av.jpg"
+    }
+  ],
+  "header": "Testimonials",
+  "title": "What Our Clients Say",
+  "prev": "← Prev",
+  "next": "Next →",
+
+  "contact2": {
+    "header": "Contact Us",
+    "title": "Let’s start something fresh.",
+    "subtitle": "Whether it's a studio in Nairobi or a corporate office in Kolwezi, we bring world-class standards to your doorstep.",
+    "tabs": {
+      "kenya": "Kenya",
+      "drc": "DRC"
+    },
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "phone": {
+      "kenya": "+254 769 344 703",
+      "drc": "+243 998 723 522"
+    },
+    "email": "hello@averracleaners.com",
+    "fastResponse": "Fast Response",
+    "fastResponseDesc": "We usually reply within 2 hours.",
+    "followUs": "Follow us:",
+    "form": {
+      "header": "Send a request",
+      "fullName": "Full Name",
+      "emailAddress": "Email Address",
+      "serviceCategory": "Service Category",
+      "message": "Message",
+      "submit": "Send Message",
+      "services": [
+        "Residential Cleaning",
+        "Commercial/Office Cleaning",
+        "Post-Construction",
+        "Specialized Sanitation"
+      ]
+    }
+  },
+  
+  "faq": {
+    "badge": "Support Hub",
+    "title_part1": "Common",
+    "title_part2": "Curiosities.",
+    "bg_text": "Questions",
+    "search_placeholder": "Search keywords...",
+    "no_results": "No matching results found for \"{{query}}\"",
+    "cta": {
+      "title": "Can't find an answer?",
+      "subtitle": "Our concierge team is standing by.",
+      "button": "Get in touch"
+    },
+    "vetted_badge": {
+      "title": "Vetted Staff",
+      "subtitle": "100% Secure & Reliable"
+    },
+    "questions": [
+      {
+        "q": "What’s included in the monthly package?",
+        "a": "Everything. From laundry and ironing to deep steam sanitation for kitchens and bathrooms. We provide 8 comprehensive sessions per month—no hidden fees, no exceptions."
+      },
+      {
+        "q": "Can I choose my cleaning days?",
+        "a": "Absolutely. We work around your lifestyle. Whether it's a Tuesday/Friday rhythm or weekends, our team synchronizes with your schedule."
+      },
+      {
+        "q": "How do payments work?",
+        "a": "Simple, transparent monthly billing. We accept Mobile Money (M-Pesa/Airtel), Cards, or Bank Transfers—all paid in advance for uninterrupted service."
+      },
+      {
+        "q": "Do you bring your own supplies?",
+        "a": "Yes. Our teams arrive fully equipped with industrial-grade steam cleaners and premium, eco-friendly detergents safe for pets and children."
+      },
+      {
+        "q": "Is the staff vetted and safe?",
+        "a": "Security is our priority. Every Averra cleaner undergoes rigorous background checks and continuous professional training to ensure your peace of mind."
+      }
+    ]
+  },
+  
+  "cta": {
+    "title": "Ready to Experience a Cleaner Tomorrow?",
+    "description": "Join hundreds of satisfied clients who’ve elevated their spaces with our professional cleaning solutions. Let’s make your world shine.",
+    "button": "Get Started"
+  },
+  "footer": {
+    "brand": "Averra Cleaners",
+    "description": "Premium home & office cleaning services across Nairobi. Reliable, professional, and spotless results every time.",
+    "book_button": "Book a Cleaning",
+    "contact_title": "Contact Us",
+    "location": "Kilimani, Nairobi",
+    "links_title": "Quick Links",
+    "links": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Services",
+      "pricing": "Pricing",
+      "contact": "Contact"
+    },
+    "copyright": "© {{year}} Averra Cleaners Ltd. All rights reserved."
+  }
+}
+

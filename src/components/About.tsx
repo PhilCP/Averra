@@ -1,7 +1,8 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { motion, useMotionValue, animate } from "framer-motion"
-
-const images = ["/cleaning-1.jpg", "/cleaning-2.jpg", "/cleaning-4.jpg"]
+import { useTranslation } from "react-i18next"
 
 // ✅ Animated number counter
 const AnimatedNumber = ({ value }: { value: number }) => {
@@ -12,9 +13,7 @@ const AnimatedNumber = ({ value }: { value: number }) => {
     const controls = animate(count, value, {
       duration: 2,
       ease: "easeOut",
-      onUpdate: (latest) => {
-        setDisplayValue(Math.floor(latest).toLocaleString())
-      },
+      onUpdate: (latest) => setDisplayValue(Math.floor(latest).toLocaleString())
     })
     return controls.stop
   }, [value, count])
@@ -25,18 +24,21 @@ const AnimatedNumber = ({ value }: { value: number }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
-      {displayValue}
-      <span className="text-amber-500">+</span>
+      {displayValue}<span className="text-amber-500">+</span>
     </motion.h3>
   )
 }
 
-const About = () => {
+const images = ["/cleaning-1.jpg", "/cleaning-2.jpg", "/cleaning-4.jpg"]
+
+export default function About() {
+  const { t } = useTranslation()
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
     <section id="about" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        
         {/* LEFT: INTERACTIVE IMAGES */}
         <div className="relative w-full flex justify-center">
           <div className="relative w-full md:w-[500px] h-[400px] flex justify-center items-center">
@@ -65,9 +67,7 @@ const About = () => {
                       : -2,
                   opacity: activeIndex === null || activeIndex === i ? 1 : 0.6,
                   filter:
-                    activeIndex === i
-                      ? "brightness(1.05)"
-                      : "brightness(0.9)",
+                    activeIndex === i ? "brightness(1.05)" : "brightness(0.9)"
                 }}
                 transition={{ type: "spring", stiffness: 200, damping: 20 }}
               />
@@ -88,48 +88,28 @@ const About = () => {
           viewport={{ once: true }}
         >
           <p className="text-primary font-semibold uppercase mb-3 tracking-widest">
-            About Averra Cleaners
+            {t("about1.subtitle")}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            A Clean Home is a Better Life
+            {t("about1.title")}
           </h2>
           <p className="text-gray-600 mb-6 leading-relaxed">
-            At <span className="font-semibold text-gray-900">Averra Cleaners </span>, we’re redefining home cleaning in Nairobi.
-Our team goes beyond surface cleaning delivering complete, all-inclusive care that
-covers
-            Our experienced team provides <span className="text-amber-500">residential </span> 
-            and <span className="text-amber-500">laundry, dishes, appliances, steam cleaning, fabric care</span> under one simple monthly plan
-          </p>
-          <p className="text-gray-600 mb-8 leading-relaxed">
-            At Averra Cleaners, we’re redefining home cleaning in Nairobi.
-Our team goes beyond surface cleaning delivering complete, all-inclusive care that
-covers laundry, dishes, appliances, steam cleaning, and fabric care under one simple monthly
-plan.
-We proudly serve all major Nairobi neighborhoods, including Lavington, Kileleshwa,
-Kilimani, Westlands, Runda, Karen, Parklands, and Lang’ata etc. ensuring every home we
-touch feels fresh, peaceful, and premium.
-Trusted by Nairobi homeowners | Built on quality, reliability, and care | 100% satisfaction
-guaranteed
-From laundry to steam-cleaning, Averra does it all twice a week.”
-Every detail. Every room. One flat fee.
+            {t("about1.description")}
           </p>
 
           {/* Animated Stats Section */}
           <div className="flex items-center gap-10 mb-10">
             <div className="text-center">
               <AnimatedNumber value={250} />
-              <p className="text-gray-500 text-sm">Layouts Cleaned</p>
+              <p className="text-gray-500 text-sm">{t("about1.stats.layouts")}</p>
             </div>
             <div className="text-center">
               <AnimatedNumber value={190} />
-              <p className="text-gray-500 text-sm">Projects Completed</p>
+              <p className="text-gray-500 text-sm">{t("about1.stats.projects")}</p>
             </div>
-           
           </div>
         </motion.div>
       </div>
     </section>
   )
 }
-
-export default About

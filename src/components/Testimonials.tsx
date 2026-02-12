@@ -1,62 +1,22 @@
 "use client"
+
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "./ui/button"
+import { useTranslation } from "react-i18next"
 
-const testimonials = [
-  {
-    name: "Grace M.",
-    role: "Kilimani",
-    message:
-      "Averra Cleaners has completely transformed my home. They handle everything — even my oven and couch look brand new every week.",
-    image: "/av.jpg",
-  },
-  {
-    name: "Brian K.",
-    role: "Lavington",
-    message:
-      "They’re consistent, professional, and my home has never felt this fresh.",
-    image: "/averra-hero.jpg",
-  },
-  {
-    name: "Sylvia N.",
-    role: "Westlands",
-    message:
-      "Since hiring Averra Cleaners, I actually look forward to coming home. Everything is spotless, and they take care of the little things I always forget.",
-    image: "/av.jpg",
-  },
-  {
-    name: "Michael O.",
-    role: "Parklands",
-    message:
-      "The team at Averra Cleaners is amazing! Punctual, thorough, and very friendly. My home has never been cleaner.",
-    image: "/averra-hero.jpg",
-  },
-  {
-    name: "Faith W.",
-    role: "Kilimani",
-    message:
-      "I love that they offer a full-service package. From laundry to deep cleaning, they make my life so much easier.",
-    image: "/av.jpg",
-  },
-  {
-    name: "James T.",
-    role: "Lavington",
-    message:
-      "Averra Cleaners is worth every penny. They’re reliable, detail-oriented, and my home always smells fresh and inviting.",
-    image: "/averra-hero.jpg",
-  },
-  {
-    name: "Rachel A.",
-    role: "Westlands",
-    message:
-      "The professionalism and care they show are unmatched. Even my carpets and curtains look brand new!",
-    image: "/av.jpg",
-  },
-]
+type Testimonial = {
+  name: string
+  role: string
+  message: string
+  image: string
+}
 
 const Testimonials = () => {
+  const { t } = useTranslation()
+  const testimonials: Testimonial[] = t("testimonials", { returnObjects: true }) as Testimonial[]
+
   const [index, setIndex] = useState(0)
 
   const handleNext = () => setIndex((prev) => (prev + 1) % testimonials.length)
@@ -69,7 +29,7 @@ const Testimonials = () => {
     return () => clearInterval(timer)
   }, [])
 
-  const t = testimonials[index]
+  const tItem = testimonials[index]
 
   return (
     <section className="relative py-28 bg-gradient-to-b from-black via-neutral-900 to-black text-white overflow-hidden">
@@ -80,10 +40,10 @@ const Testimonials = () => {
           transition={{ duration: 0.7 }}
         >
           <p className="text-amber-400 font-semibold tracking-widest uppercase mb-2">
-            Testimonials
+            {t("header")}
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold mb-14 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            What Our Clients Say
+            {t("title")}
           </h2>
         </motion.div>
 
@@ -107,26 +67,22 @@ const Testimonials = () => {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
                 className="bg-neutral-900/80 backdrop-blur-xl rounded-3xl shadow-2xl border border-neutral-800 p-10 md:p-12 flex flex-col md:flex-row items-center gap-8 text-left"
               >
-                {/* Image */}
                 <motion.img
-                  src={t.image}
-                  alt={t.name}
+                  src={tItem.image}
+                  alt={tItem.name}
                   className="w-32 h-32 md:w-44 md:h-44 rounded-2xl object-cover shadow-lg border border-neutral-700"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                 />
 
-                {/* Text */}
                 <div className="flex-1 space-y-5">
                   <Quote className="text-amber-400 w-10 h-10 opacity-70" />
                   <p className="text-gray-300 text-lg leading-relaxed">
-                    “{t.message}”
+                    “{tItem.message}”
                   </p>
                   <div className="pt-4">
-                    <h3 className="text-xl font-semibold text-white">
-                      {t.name}
-                    </h3>
-                    <p className="text-sm text-gray-400">{t.role}</p>
+                    <h3 className="text-xl font-semibold text-white">{tItem.name}</h3>
+                    <p className="text-sm text-gray-400">{tItem.role}</p>
                   </div>
                 </div>
               </motion.div>
@@ -150,14 +106,14 @@ const Testimonials = () => {
             onClick={handlePrev}
             className="border-amber-500 text-amber-400 bg-neutral-800 hover:bg-amber-700/50 rounded-full"
           >
-            ← Prev
+            {t("prev")}
           </Button>
           <Button
             variant="outline"
             onClick={handleNext}
             className="border-amber-500 text-amber-400 bg-neutral-800 hover:bg-amber-700/50 rounded-full"
           >
-            Next →
+            {t("next")}
           </Button>
         </div>
       </div>
