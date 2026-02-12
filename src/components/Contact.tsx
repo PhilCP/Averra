@@ -35,12 +35,12 @@ export default function ContactSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
             >
-              <span className="inline-block px-4 py-2 rounded-full bg-blue-50 text-blue-400 text-xs font-bold uppercase tracking-widest mb-6">
+              <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
                 Contact Us
               </span>
               <h2 className="text-5xl md:text-6xl font-bold text-slate-900 tracking-tight leading-[1.1] mb-6">
                 Let’s start <br />
-                <span className="text-blue-400">something fresh.</span>
+                <span className="text-primary">something fresh.</span>
               </h2>
               <p className="text-lg text-slate-600 leading-relaxed">
                 Whether it's a studio in Nairobi or a corporate office in Kolwezi, 
@@ -52,13 +52,13 @@ export default function ContactSection() {
             <div className="bg-white p-2 rounded-2xl shadow-sm border border-slate-100 inline-flex gap-2">
               <button 
                 onClick={() => setActiveTab("kenya")}
-                className={`px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === "kenya" ? "bg-slate-900 text-white shadow-md" : "text-slate-500 hover:bg-slate-50"}`}
+                className={`px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === "kenya" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"}`}
               >
                 Kenya
               </button>
               <button 
                 onClick={() => setActiveTab("drc")}
-                className={`px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === "drc" ? "bg-slate-900 text-white shadow-md" : "text-slate-500 hover:bg-slate-50"}`}
+                className={`px-6 py-2 rounded-xl text-sm font-bold transition-all ${activeTab === "drc" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"}`}
               >
                 DRC
               </button>
@@ -161,14 +161,14 @@ export default function ContactSection() {
                   />
                 </div>
 
-                <button className="sm:col-span-2 w-full bg-blue-400 hover:bg-blue-600 text-white font-bold py-5 rounded-2xl shadow-lg shadow-blue-200 flex items-center justify-center gap-3 group transition-all active:scale-[0.98]">
+                <button className="sm:col-span-2 w-full bg-primary hover:bg-primary/90 text-white font-bold py-5 rounded-2xl shadow-lg shadow-blue-200 flex items-center justify-center gap-3 group transition-all active:scale-[0.98]">
                   <span>Send Message</span>
                   <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                 </button>
               </form>
 
               {/* Decorative Element */}
-              <div className="absolute top-[-20px] right-[-20px] w-16 h-16 bg-blue-400 rounded-2xl flex items-center justify-center shadow-xl rotate-12 hidden md:flex">
+              <div className="absolute top-[-20px] right-[-20px] w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-xl rotate-12 hidden md:flex">
                 <MessageSquare className="text-white w-8 h-8" />
               </div>
             </div>

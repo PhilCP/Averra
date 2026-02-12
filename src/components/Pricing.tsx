@@ -93,7 +93,7 @@ export default function Pricing() {
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-blue-400 bg-sky-50 px-4 py-2 rounded-full mb-4 inline-block">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-4 py-2 rounded-full mb-4 inline-block">
             Pricing & Services
           </span>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
@@ -109,7 +109,7 @@ export default function Pricing() {
               <button
                 onClick={() => setRegion("kenya")}
                 className={`px-6 py-2 rounded-xl text-sm font-semibold transition-all ${
-                  region === "kenya" ? "bg-sky-600 text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
+                  region === "kenya" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
                 }`}
               >
                 Kenya
@@ -117,7 +117,7 @@ export default function Pricing() {
               <button
                 onClick={() => setRegion("drc")}
                 className={`px-6 py-2 rounded-xl text-sm font-semibold transition-all ${
-                  region === "drc" ? "bg-sky-600 text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
+                  region === "drc" ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
                 }`}
               >
                 DRC
