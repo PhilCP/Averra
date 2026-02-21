@@ -176,7 +176,7 @@
     "emailUs": "Email",
     "phone": {
       "kenya": "+254 769 344 703",
-      "drc": "+243 998 723 522"
+      "drc": "+243 981 539 797"
     },
     "email": "hello@averracleaners.com",
     "fastResponse": "Réponse rapide",
@@ -258,7 +258,28 @@
       "contact": "Contact"
     },
     "copyright": "© {{year}} Averra Cleaners Ltd. Tous droits réservés."
+  },
+  
+  "chatbot": {
+    "title": "Assistante Averra",
+    "status": "En ligne · Répond instantanément",
+    "badge": "Chattez avec nous !",
+    "placeholder": "Écrivez un message...",
+    "suggestions": [
+      "Quels services proposez-vous ?",
+      "Combien coûte un nettoyage ?",
+      "Réserver un rendez-vous",
+      "Utilisez-vous des produits écologiques ?"
+    ],
+    "handoff": {
+      "prompt": "Souhaitez-vous continuer sur WhatsApp ou nous envoyer un e-mail pour une réponse plus rapide et personnalisée ?",
+      "whatsapp": "Continuer sur WhatsApp",
+      "email": "Nous envoyer un e-mail",
+      "dismiss": "Non merci, continuer ici"
+    },
+    "system_prompt": "Vous êtes l'assistante virtuelle conviviale d'Averra, une entreprise de nettoyage professionnel basée à Nairobi, Kenya et Kolwezi, RDC. Vous aidez les clients pour : la réservation et la planification de séances de nettoyage, les informations sur les services (résidentiel, commercial, nettoyage en profondeur, vapeur, lessive, repassage, entretien des appareils, tapis/canapé/matelas), les tarifs (Kenya : Studio 5000 Ksh, 1BR 8000 Ksh, 2BR 13000 Ksh, 3BR 18000 Ksh, 4BR 23500 Ksh, 5BR 25000 Ksh — RDC : bureaux 40-300$, écoles 150-1000$, hôtels 200-1500$, restaurants 120-700$), et les FAQ. Les forfaits incluent 8 séances/mois. Paiement via M-Pesa, Airtel, carte ou virement. Le personnel est vérifié. Fournitures écologiques incluses. Soyez chaleureuse, concise et professionnelle. Répondez toujours en français. Entreprise : Averra Cleaners. Email : hello@averracleaners.com. Téléphone Kenya : +254 769 344 703."
   }
+
 }
 
 

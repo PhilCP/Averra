@@ -7,5 +7,8 @@
       plugins: [
         react(),
         tailwindcss(), // Add the Tailwind CSS plugin here
+        
       ],
     })
+    
+

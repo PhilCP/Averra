@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useMemo, type FC } from "react"
+import {  useMemo, type FC } from "react"
 import { useTranslation } from "react-i18next"
 import {
   Instagram,
@@ -11,13 +11,13 @@ import {
   Mail,
   Phone,
   MapPin,
-  ArrowUp,
+  // ArrowUp,
 } from "lucide-react"
 import { Button } from "./ui/button"
 
 const Footer: FC = () => {
   const { t } = useTranslation()
-  const [showTopBtn, setShowTopBtn] = useState(false)
+  // const [showTopBtn, setShowTopBtn] = useState(false)
 
   // Memoize links to prevent re-renders
   const navLinks = useMemo(() => [
@@ -28,13 +28,13 @@ const Footer: FC = () => {
     { name: t('footer.links.contact'), href: "#" },
   ], [t])
 
-  useEffect(() => {
-    const handleScroll = () => setShowTopBtn(window.scrollY > 300)
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  // useEffect(() => {
+  //   const handleScroll = () => setShowTopBtn(window.scrollY > 300)
+  //   window.addEventListener("scroll", handleScroll)
+  //   return () => window.removeEventListener("scroll", handleScroll)
+  // }, [])
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" })
+  // const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" })
 
   return (
     <footer className="relative bg-slate-950 text-slate-400 pt-24 pb-12 overflow-hidden">
@@ -97,12 +97,12 @@ const Footer: FC = () => {
           </p>
         </div>
       </div>
-
+{/* 
       {showTopBtn && (
         <button onClick={scrollToTop} className="fixed bottom-6 right-6 bg-primary hover:bg-blue-600 text-white p-3 rounded-full shadow-lg transition-all hover:scale-110">
           <ArrowUp className="w-5 h-5" />
         </button>
-      )}
+      )} */}
     </footer>
   )
 }

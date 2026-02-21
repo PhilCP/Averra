@@ -10,6 +10,7 @@ import Faq from "./components/FAQ"
 import Banner from "./components/CTASection"
 import Footer from "./components/Footer"
 import Services from "./components/Services"
+import Chatbot from "./components/Chatbot"
 
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="font-sans bg-gray-50 overflow-x-hidden">
       <Navbar />
+      <Chatbot />
 
       <motion.div
         initial="hidden"

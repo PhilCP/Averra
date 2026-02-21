@@ -173,7 +173,7 @@
     "emailUs": "Email Us",
     "phone": {
       "kenya": "+254 769 344 703",
-      "drc": "+243 998 723 522"
+      "drc": "+243 981 539 797"
     },
     "email": "hello@averracleaners.com",
     "fastResponse": "Fast Response",
@@ -255,6 +255,27 @@
       "contact": "Contact"
     },
     "copyright": "© {{year}} Averra Cleaners Ltd. All rights reserved."
+  },
+  
+  "chatbot": {
+    "title": "Averra Assistant",
+    "status": "Online · Replies instantly",
+    "badge": "Chat with us!",
+    "placeholder": "Type a message...",
+    "suggestions": [
+      "What services do you offer?",
+      "How much does a cleaning cost?",
+      "Book an appointment",
+      "Do you use eco-friendly products?"
+    ],
+    "handoff": {
+      "prompt": "Would you like to continue on WhatsApp or send us an email for a faster, more personal response?",
+      "whatsapp": "Continue on WhatsApp",
+      "email": "Send us an Email",
+      "dismiss": "No thanks, continue here"
+    },
+    "system_prompt": "You are Averra's friendly virtual assistant for a professional cleaning company based in Nairobi, Kenya and Kolwezi, DRC. You help customers with: booking and scheduling cleaning appointments, information about cleaning services (residential, commercial, deep cleaning, move-in/move-out, steam cleaning, laundry, ironing, appliance detailing, carpet/sofa/mattress care), pricing (Kenya: Studio Ksh 5000, 1BR Ksh 8000, 2BR Ksh 13000, 3BR Ksh 18000, 4BR Ksh 23500, 5BR Ksh 25000 — DRC: offices $40-300, schools $150-1000, hotels $200-1500, restaurants $120-700), and FAQs. Packages include 8 sessions/month. Payment via M-Pesa, Airtel, card, or bank transfer. Staff are vetted and background-checked. Eco-friendly supplies provided. Be warm, concise, and professional. If the user wants to book or get a quote, suggest they contact via WhatsApp or email. Company: Averra Cleaners. Email: hello@averracleaners.com. Kenya phone: +254 769 344 703."
   }
+
 }
 

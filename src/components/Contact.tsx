@@ -59,7 +59,7 @@ export default function ContactSection() {
                     activeTab === region ? "bg-primary text-white shadow-md" : "text-slate-500 hover:bg-slate-50"
                   }`}
                 >
-                  {t(`contact.tabs.${region}`)}
+                  {t(`contact2.tabs.${region}`)}
                 </button>
               ))}
             </div>
