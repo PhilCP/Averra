@@ -56,7 +56,7 @@ const Footer: FC = () => {
             <h3 className="text-lg font-semibold text-white mb-3">{t('footer.contact_title')}</h3>
             <ul className="space-y-3 text-slate-400">
               <li className="flex items-center justify-center md:justify-start gap-2">
-                <Phone className="w-4 h-4 text-blue-400" /> +254 769 344 703
+                <Phone className="w-4 h-4 text-blue-400" /> +243 981 539 797
               </li>
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <Mail className="w-4 h-4 text-blue-400" /> hello@averracleaners.com
