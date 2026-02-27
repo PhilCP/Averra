@@ -30,7 +30,7 @@
     "description": "Un plan de nettoyage complet conçu pour maintenir une résidence impeccable sans options complexes ni frais cachés.",
     "core": {
       "title": "Essentiels de Base",
-      "description": "Soins quotidiens pour maintenir l’harmonie de votre maison.",
+      "description": "Soins quotidiens pour maintenir l&apos;harmonie de votre maison.",
       "items": ["Entretien de la vaisselle et du linge", "Dépoussiérage et lavage léger", "Organisation légère"]
     },
     "deep": {
