@@ -8,3 +8,25 @@
 --color-light: #bfdbfe;      /* Pale blue */
   --font-sans: "Inter", sans-serif;
 }
+.nav-desktop-link {
+  position: relative;
+  color: #1f2937;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.nav-desktop-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: width 0.3s;
+}
+.nav-desktop-link:hover {
+  color: var(--color-primary);
+}
+.nav-desktop-link:hover::after {
+  width: 100%;
+}
