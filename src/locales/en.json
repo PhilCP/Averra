@@ -14,10 +14,12 @@
   "about1": {
     "subtitle": "About Averra Cleaners",
     "title": "A Clean Home is a Better Life",
+    
     "description": "At Averra Cleaners, we’re redefining home cleaning in Nairobi. Our team delivers residential and laundry, dishes, appliances, steam cleaning, and fabric care under one simple monthly plan.",
     "stats": {
       "layouts": "Layouts Cleaned",
-      "projects": "Projects Completed"
+      "projects": "Projects Completed",
+      "ratingLabel": "Customer Rating"
     }
   },
   "services": {
@@ -244,6 +246,7 @@
     "brand": "Averra Cleaners",
     "description": "Premium home & office cleaning services across Nairobi. Reliable, professional, and spotless results every time.",
     "book_button": "Book a Cleaning",
+    "developed_by": "Developed by",
     "contact_title": "Contact Us",
     "location": "Kilimani, Nairobi",
     "links_title": "Quick Links",
