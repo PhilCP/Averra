@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { t, i18n } = useTranslation();
-  const links = ["home", "about", "pricing", "service", "contact"];
+  const links = ["home", "about", "pricing", "service", "events", "contact"];
 
   // Add subtle background on scroll
   useEffect(() => {

@@ -3,6 +3,7 @@
   "about": "About",
   "pricing": "Pricing",
   "service": "Service",
+  "events": "Events",
   "contact": "Contact",
   "login": "Login",
   "signup": "Sign Up",
@@ -14,8 +15,7 @@
   "about1": {
     "subtitle": "About Averra Cleaners",
     "title": "A Clean Home is a Better Life",
-    
-    "description": "At Averra Cleaners, we’re redefining home cleaning in Nairobi. Our team delivers residential and laundry, dishes, appliances, steam cleaning, and fabric care under one simple monthly plan.",
+    "description": "At Averra Cleaners, we're redefining home cleaning in Nairobi. Our team delivers residential and laundry, dishes, appliances, steam cleaning, and fabric care under one simple monthly plan.",
     "stats": {
       "layouts": "Layouts Cleaned",
       "projects": "Projects Completed",
@@ -24,10 +24,7 @@
   },
   "services": {
     "header": "The Averra Standard",
-    "title": {
-      "main": "Everything included.",
-      "sub": "Nothing overlooked."
-    },
+    "title": { "main": "Everything included.", "sub": "Nothing overlooked." },
     "description": "A comprehensive cleaning plan designed to maintain a spotless residence without complex add-ons or hidden fees.",
     "core": {
       "title": "Core Essentials",
@@ -49,13 +46,10 @@
     "header": "Pricing & Services",
     "title": "Cleaning, Done Properly",
     "description": "Tailored solutions for homes, businesses, and public institutions.",
-    "toggle": {
-      "kenya": "Kenya",
-      "drc": "DRC"
-    },
+    "toggle": { "kenya": "Kenya", "drc": "DRC" },
     "kenyaPlans": [
-      { "type": "Studio", "price": "Ksh 5,000", "desc": "Perfect for compact modern living with full-service care." },
-      { "type": "1 Bedroom", "price": "Ksh 8,000", "desc": "Balanced lifestyle cleaning with laundry & steam sanitation." },
+      { "type": "Studio",    "price": "Ksh 5,000",  "desc": "Perfect for compact modern living with full-service care." },
+      { "type": "1 Bedroom", "price": "Ksh 8,000",  "desc": "Balanced lifestyle cleaning with laundry & steam sanitation." },
       { "type": "2 Bedroom", "price": "Ksh 13,000", "desc": "Deep care including fabrics, carpets & organization." },
       { "type": "3 Bedroom", "price": "Ksh 18,000", "desc": "Premium apartment care with appliance detailing." },
       { "type": "4 Bedroom", "price": "Ksh 23,500", "desc": "Family-scale service with ironing & full sanitation." },
@@ -73,38 +67,14 @@
     "everyPlanDescription": "Standard quality checks and eco-friendly supplies provided by our specialized team.",
     "drc": {
       "services": [
-        {
-          "title": "Individuals",
-          "items": [
-            "Houses & apartments",
-            "Full deep cleaning",
-            "Windows, floors & disinfection",
-            "Laundry & ironing"
-          ]
-        },
-        {
-          "title": "Businesses",
-          "items": [
-            "Offices & common areas",
-            "Institutions, NGOs & schools",
-            "Fixed monthly contracts",
-            "Strict quality checks"
-          ]
-        },
-        {
-          "title": "Specialized",
-          "items": [
-            "Post-construction / renovation",
-            "Events & receptions",
-            "Deep cleaning",
-            "Sensitive area disinfection"
-          ]
-        }
+        { "title": "Individuals",  "items": ["Houses & apartments", "Full deep cleaning", "Windows, floors & disinfection", "Laundry & ironing"] },
+        { "title": "Businesses",   "items": ["Offices & common areas", "Institutions, NGOs & schools", "Fixed monthly contracts", "Strict quality checks"] },
+        { "title": "Specialized",  "items": ["Post-construction / renovation", "Events & receptions", "Deep cleaning", "Sensitive area disinfection"] }
       ],
       "pricing": [
-        { "title": "Offices", "price": "40 – 300 $" },
-        { "title": "Schools", "price": "150 – 1,000 $" },
-        { "title": "Hotels", "price": "200 – 1,500 $" },
+        { "title": "Offices",     "price": "40 – 300 $" },
+        { "title": "Schools",     "price": "150 – 1,000 $" },
+        { "title": "Hotels",      "price": "200 – 1,500 $" },
         { "title": "Restaurants", "price": "120 – 700 $" }
       ],
       "contact": {
@@ -115,68 +85,26 @@
     }
   },
   "testimonials": [
-    {
-      "name": "Grace M.",
-      "role": "Kilimani",
-      "message": "Averra Cleaners has completely transformed my home. They handle everything — even my oven and couch look brand new every week.",
-      "image": "/av.jpg"
-    },
-    {
-      "name": "Brian K.",
-      "role": "Lavington",
-      "message": "They’re consistent, professional, and my home has never felt this fresh.",
-      "image": "/averra-hero.jpg"
-    },
-    {
-      "name": "Sylvia N.",
-      "role": "Westlands",
-      "message": "Since hiring Averra Cleaners, I actually look forward to coming home. Everything is spotless, and they take care of the little things I always forget.",
-      "image": "/av.jpg"
-    },
-    {
-      "name": "Michael O.",
-      "role": "Parklands",
-      "message": "The team at Averra Cleaners is amazing! Punctual, thorough, and very friendly. My home has never been cleaner.",
-      "image": "/averra-hero.jpg"
-    },
-    {
-      "name": "Faith W.",
-      "role": "Kilimani",
-      "message": "I love that they offer a full-service package. From laundry to deep cleaning, they make my life so much easier.",
-      "image": "/av.jpg"
-    },
-    {
-      "name": "James T.",
-      "role": "Lavington",
-      "message": "Averra Cleaners is worth every penny. They’re reliable, detail-oriented, and my home always smells fresh and inviting.",
-      "image": "/averra-hero.jpg"
-    },
-    {
-      "name": "Rachel A.",
-      "role": "Westlands",
-      "message": "The professionalism and care they show are unmatched. Even my carpets and curtains look brand new!",
-      "image": "/av.jpg"
-    }
+    { "name": "Grace M.",   "role": "Kilimani",  "message": "Averra Cleaners has completely transformed my home. They handle everything — even my oven and couch look brand new every week.", "image": "/av.jpg" },
+    { "name": "Brian K.",   "role": "Lavington", "message": "They're consistent, professional, and my home has never felt this fresh.", "image": "/averra-hero.jpg" },
+    { "name": "Sylvia N.",  "role": "Westlands", "message": "Since hiring Averra Cleaners, I actually look forward to coming home. Everything is spotless, and they take care of the little things I always forget.", "image": "/av.jpg" },
+    { "name": "Michael O.", "role": "Parklands", "message": "The team at Averra Cleaners is amazing! Punctual, thorough, and very friendly. My home has never been cleaner.", "image": "/averra-hero.jpg" },
+    { "name": "Faith W.",   "role": "Kilimani",  "message": "I love that they offer a full-service package. From laundry to deep cleaning, they make my life so much easier.", "image": "/av.jpg" },
+    { "name": "James T.",   "role": "Lavington", "message": "Averra Cleaners is worth every penny. They're reliable, detail-oriented, and my home always smells fresh and inviting.", "image": "/averra-hero.jpg" },
+    { "name": "Rachel A.",  "role": "Westlands", "message": "The professionalism and care they show are unmatched. Even my carpets and curtains look brand new!", "image": "/av.jpg" }
   ],
   "header": "Testimonials",
   "title": "What Our Clients Say",
   "prev": "← Prev",
   "next": "Next →",
-
   "contact2": {
     "header": "Contact Us",
-    "title": "Let’s start something fresh.",
+    "title": "Let's start something fresh.",
     "subtitle": "Whether it's a studio in Nairobi or a corporate office in Kolwezi, we bring world-class standards to your doorstep.",
-    "tabs": {
-      "kenya": "Kenya",
-      "drc": "DRC"
-    },
+    "tabs": { "kenya": "Kenya", "drc": "DRC" },
     "callUs": "Call Us",
     "emailUs": "Email Us",
-    "phone": {
-      "kenya": "+254 769 344 703",
-      "drc": "+243 981 539 797"
-    },
+    "phone": { "kenya": "+254 769 344 703", "drc": "+243 981 539 797" },
     "email": "hello@averracleaners.com",
     "fastResponse": "Fast Response",
     "fastResponseDesc": "We usually reply within 2 hours.",
@@ -188,15 +116,9 @@
       "serviceCategory": "Service Category",
       "message": "Message",
       "submit": "Send Message",
-      "services": [
-        "Residential Cleaning",
-        "Commercial/Office Cleaning",
-        "Post-Construction",
-        "Specialized Sanitation"
-      ]
+      "services": ["Residential Cleaning", "Commercial/Office Cleaning", "Post-Construction", "Specialized Sanitation"]
     }
   },
-  
   "faq": {
     "badge": "Support Hub",
     "title_part1": "Common",
@@ -204,42 +126,19 @@
     "bg_text": "Questions",
     "search_placeholder": "Search keywords...",
     "no_results": "No matching results found for \"{{query}}\"",
-    "cta": {
-      "title": "Can't find an answer?",
-      "subtitle": "Our concierge team is standing by.",
-      "button": "Get in touch"
-    },
-    "vetted_badge": {
-      "title": "Vetted Staff",
-      "subtitle": "100% Secure & Reliable"
-    },
+    "cta": { "title": "Can't find an answer?", "subtitle": "Our concierge team is standing by.", "button": "Get in touch" },
+    "vetted_badge": { "title": "Vetted Staff", "subtitle": "100% Secure & Reliable" },
     "questions": [
-      {
-        "q": "What’s included in the monthly package?",
-        "a": "Everything. From laundry and ironing to deep steam sanitation for kitchens and bathrooms. We provide 8 comprehensive sessions per month—no hidden fees, no exceptions."
-      },
-      {
-        "q": "Can I choose my cleaning days?",
-        "a": "Absolutely. We work around your lifestyle. Whether it's a Tuesday/Friday rhythm or weekends, our team synchronizes with your schedule."
-      },
-      {
-        "q": "How do payments work?",
-        "a": "Simple, transparent monthly billing. We accept Mobile Money (M-Pesa/Airtel), Cards, or Bank Transfers—all paid in advance for uninterrupted service."
-      },
-      {
-        "q": "Do you bring your own supplies?",
-        "a": "Yes. Our teams arrive fully equipped with industrial-grade steam cleaners and premium, eco-friendly detergents safe for pets and children."
-      },
-      {
-        "q": "Is the staff vetted and safe?",
-        "a": "Security is our priority. Every Averra cleaner undergoes rigorous background checks and continuous professional training to ensure your peace of mind."
-      }
+      { "q": "What's included in the monthly package?", "a": "Everything. From laundry and ironing to deep steam sanitation for kitchens and bathrooms. We provide 8 comprehensive sessions per month—no hidden fees, no exceptions." },
+      { "q": "Can I choose my cleaning days?",          "a": "Absolutely. We work around your lifestyle. Whether it's a Tuesday/Friday rhythm or weekends, our team synchronizes with your schedule." },
+      { "q": "How do payments work?",                  "a": "Simple, transparent monthly billing. We accept Mobile Money (M-Pesa/Airtel), Cards, or Bank Transfers—all paid in advance for uninterrupted service." },
+      { "q": "Do you bring your own supplies?",         "a": "Yes. Our teams arrive fully equipped with industrial-grade steam cleaners and premium, eco-friendly detergents safe for pets and children." },
+      { "q": "Is the staff vetted and safe?",           "a": "Security is our priority. Every Averra cleaner undergoes rigorous background checks and continuous professional training to ensure your peace of mind." }
     ]
   },
-  
   "cta": {
     "title": "Ready to Experience a Cleaner Tomorrow?",
-    "description": "Join hundreds of satisfied clients who’ve elevated their spaces with our professional cleaning solutions. Let’s make your world shine.",
+    "description": "Join hundreds of satisfied clients who've elevated their spaces with our professional cleaning solutions. Let's make your world shine.",
     "button": "Get Started"
   },
   "footer": {
@@ -250,35 +149,130 @@
     "contact_title": "Contact Us",
     "location": "Kilimani, Nairobi",
     "links_title": "Quick Links",
-    "links": {
-      "home": "Home",
-      "about": "About Us",
-      "services": "Services",
-      "pricing": "Pricing",
-      "contact": "Contact"
-    },
+    "links": { "home": "Home", "about": "About Us", "services": "Services", "pricing": "Pricing", "events": "Events", "contact": "Contact" },
     "copyright": "© {{year}} Averra Cleaners Ltd. All rights reserved."
   },
-  
   "chatbot": {
     "title": "Averra Assistant",
     "status": "Online · Replies instantly",
     "badge": "Chat with us!",
     "placeholder": "Type a message...",
-    "suggestions": [
-      "What services do you offer?",
-      "How much does a cleaning cost?",
-      "Book an appointment",
-      "Do you use eco-friendly products?"
-    ],
+    "suggestions": ["What services do you offer?", "How much does a cleaning cost?", "Book an appointment", "Do you use eco-friendly products?"],
     "handoff": {
       "prompt": "Would you like to continue on WhatsApp or send us an email for a faster, more personal response?",
       "whatsapp": "Continue on WhatsApp",
       "email": "Send us an Email",
       "dismiss": "No thanks, continue here"
     },
-    "system_prompt": "You are Averra's friendly virtual assistant for a professional cleaning company based in Nairobi, Kenya and Kolwezi, DRC. You help customers with: booking and scheduling cleaning appointments, information about cleaning services (residential, commercial, deep cleaning, move-in/move-out, steam cleaning, laundry, ironing, appliance detailing, carpet/sofa/mattress care), pricing (Kenya: Studio Ksh 5000, 1BR Ksh 8000, 2BR Ksh 13000, 3BR Ksh 18000, 4BR Ksh 23500, 5BR Ksh 25000 — DRC: offices $40-300, schools $150-1000, hotels $200-1500, restaurants $120-700), and FAQs. Packages include 8 sessions/month. Payment via M-Pesa, Airtel, card, or bank transfer. Staff are vetted and background-checked. Eco-friendly supplies provided. Be warm, concise, and professional. If the user wants to book or get a quote, suggest they contact via WhatsApp or email. Company: Averra Cleaners. Email: hello@averracleaners.com. Kenya phone: +254 769 344 703."
+    "system_prompt": "You are Averra's friendly virtual assistant for a professional cleaning company based in Nairobi, Kenya and Kolwezi, DRC. You help customers with: booking and scheduling cleaning appointments, information about cleaning services (residential, commercial, deep cleaning, move-in/move-out, steam cleaning, laundry, ironing, appliance detailing, carpet/sofa/mattress care), pricing (Kenya: Studio Ksh 5000, 1BR Ksh 8000, 2BR Ksh 13000, 3BR Ksh 18000, 4BR Ksh 23500, 5BR Ksh 25000 — DRC: offices $40-300, schools $150-1000, hotels $200-1500, restaurants $120-700), and FAQs. Packages include 8 sessions/month. Payment via M-Pesa, Airtel, card, or bank transfer. Staff are vetted and background-checked. Eco-friendly supplies provided. Be warm, concise, and professional. Company: Averra Cleaners. Email: hello@averracleaners.com. Kenya phone: +254 769 344 703."
+  },
+
+  "trainingPopup": {
+    "badge": "New Training",
+    "title": "10-Day Intensive Professional Training",
+    "subtitle": "Public sanitation, road cleaning, recycling, waste management & environmental protection.",
+    "description": "This professional training program is designed by experienced professionals to provide practical knowledge and modern skills in recycling, waste management, road and public space cleaning, public sanitation, and environmental protection.",
+    "objectivesTitle": "What you'll achieve",
+    "objectives": [
+      "Understand public sanitation standards and environmental health practices",
+      "Organize waste collection, sorting, and recycling operations safely and effectively",
+      "Gain practical experience in sanitation field operations and professional cleaning",
+      "Greater professional exposure through company and field visits"
+    ],
+    "meta": {
+      "dates":     "Jun 8 – 18, 2026",
+      "location":  "Kilimani, Nairobi",
+      "duration":  "10 Days · Theory + Field",
+      "languages": "EN · FR · Swahili"
+    },
+    "stats": {
+      "duration":       "Duration",
+      "durationVal":    "10 Days",
+      "sessions":       "Sessions",
+      "sessionsVal":    "10 Topics",
+      "certificate":    "Certificate",
+      "certificateVal": "Awarded"
+    },
+    "tabs": {
+      "overview":  "Overview",
+      "schedule":  "10-Day Schedule"
+    },
+    "scheduleTypes": {
+      "theory_practical": "Theory & Practical",
+      "theory":           "Theory",
+      "practical":        "Practical",
+      "practical_demo":   "Practical Demo",
+      "field_activity":   "Field Activity",
+      "company_visits":   "Company Visits",
+      "evaluation":       "Evaluation"
+    },
+    "schedule": [
+      { "day": "Jun 8",  "topic": "Introduction to Public Sanitation & Environmental Health", "typeKey": "theory_practical" },
+      { "day": "Jun 9",  "topic": "Road Cleaning & Public Space Maintenance",                  "typeKey": "theory_practical" },
+      { "day": "Jun 10", "topic": "Waste Collection & Transportation Systems",                 "typeKey": "theory" },
+      { "day": "Jun 11", "topic": "Waste Sorting & Recycling Methods",                        "typeKey": "practical" },
+      { "day": "Jun 12", "topic": "Public Health & Community Hygiene",                         "typeKey": "theory" },
+      { "day": "Jun 13", "topic": "Environmental Protection & Pollution Control",              "typeKey": "theory" },
+      { "day": "Jun 15", "topic": "Sanitation Equipment & Safety Procedures",                 "typeKey": "practical_demo" },
+      { "day": "Jun 16", "topic": "Practical Road Cleaning & Field Activities",               "typeKey": "field_activity" },
+      { "day": "Jun 17", "topic": "Company Visits & Professional Exchange Sessions",          "typeKey": "company_visits" },
+      { "day": "Jun 18", "topic": "Final Evaluation & Certificate Ceremony",                  "typeKey": "evaluation" }
+    ],
+    "cta": {
+      "title":   "Interested in this training?",
+      "contact": "Contact us at hello@averracleaners.com · +254 769 344 703",
+      "button":  "See Event Details"
+    }
+  },
+
+  "eventsSection": {
+    "sectionBadge": "Events & Training",
+    "heading": {
+      "main":   "Learn. Grow.",
+      "accent": "Certify."
+    },
+    "subheading":      "Professional training and community events designed to raise the standard of sanitation and environmental care across Kenya and beyond.",
+    "highlightsLabel": "Highlights",
+    "registerBtn":     "Register Interest",
+    "emailSubject":    "Training Inquiry",
+    "learnMore":       "Learn more",
+    "showLess":        "Show less",
+    "followNote":      "More events coming — follow us",
+    "followNote2":     "for updates.",
+    "events": [
+      {
+        "badge": "Featured", "category": "Training",
+        "title": "10-Day Intensive Professional Training",
+        "subtitle": "Public sanitation, waste management, recycling & environmental protection",
+        "date": "June 8 – 18, 2026", "location": "Kilimani, Nairobi, Kenya",
+        "duration": "10 Days", "spots": "Limited spots",
+        "highlights": [
+          "Road cleaning & public space maintenance",
+          "Waste sorting & recycling methods",
+          "Sanitation equipment & safety",
+          "Field activities & company visits",
+          "Certificate ceremony on Day 10"
+        ],
+        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+      },
+      {
+        "badge": "Coming Soon", "category": "Workshop",
+        "title": "Eco-Friendly Cleaning Workshop",
+        "subtitle": "Modern green cleaning techniques for households and businesses",
+        "date": "Q3 2026 — Date TBD", "location": "Nairobi, Kenya",
+        "duration": "1 Day", "spots": "Open registration soon",
+        "highlights": ["Eco-friendly product selection", "Sustainable cleaning routines", "Green certifications overview"],
+        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+      },
+      {
+        "badge": "Coming Soon", "category": "Community",
+        "title": "Nairobi Community Clean-Up Day",
+        "subtitle": "Join Averra and community partners for a city-wide sanitation drive",
+        "date": "Q4 2026 — Date TBD", "location": "Various Locations, Nairobi",
+        "duration": "1 Day", "spots": "Open to all",
+        "highlights": ["Neighbourhood waste collection", "Recycling awareness drive", "Community engagement & prizes"],
+        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703 | +243 981 539 797" }
+      }
+    ]
   }
-
 }
-

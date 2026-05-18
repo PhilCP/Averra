@@ -3,6 +3,7 @@
   "about": "À propos",
   "pricing": "Tarifs",
   "service": "Service",
+  "events": "Événements",
   "contact": "Contact",
   "login": "Connexion",
   "signup": "S'inscrire",
@@ -11,7 +12,6 @@
     "subtitle": "Profitez d'un espace impeccable avec notre équipe de nettoyage experte. Abordable, écologique et adapté à vos besoins !",
     "cta": "Réserver le service de nettoyage"
   },
-  
   "about1": {
     "subtitle": "À propos d'Averra Cleaners",
     "title": "Une maison propre, une vie meilleure",
@@ -23,14 +23,11 @@
   },
   "services": {
     "header": "La Norme Averra",
-    "title": {
-      "main": "Tout inclus.",
-      "sub": "Rien n'est oublié."
-    },
+    "title": { "main": "Tout inclus.", "sub": "Rien n'est oublié." },
     "description": "Un plan de nettoyage complet conçu pour maintenir une résidence impeccable sans options complexes ni frais cachés.",
     "core": {
       "title": "Essentiels de Base",
-      "description": "Soins quotidiens pour maintenir l&apos;harmonie de votre maison.",
+      "description": "Soins quotidiens pour maintenir l'harmonie de votre maison.",
       "items": ["Entretien de la vaisselle et du linge", "Dépoussiérage et lavage léger", "Organisation légère"]
     },
     "deep": {
@@ -44,18 +41,14 @@
       "items": ["Nettoyage en profondeur des tapis et canapés", "Hygiène des matelas", "Détail des tissus"]
     }
   },
-  
   "pricing1": {
     "header": "Tarifs & Services",
     "title": "Nettoyage, bien fait",
     "description": "Solutions sur mesure pour particuliers, entreprises et institutions publiques.",
-    "toggle": {
-      "kenya": "Kenya",
-      "drc": "RDC"
-    },
+    "toggle": { "kenya": "Kenya", "drc": "RDC" },
     "kenyaPlans": [
-      { "type": "Studio", "price": "Ksh 5,000", "desc": "Parfait pour un espace moderne compact avec service complet." },
-      { "type": "1 Bedroom", "price": "Ksh 8,000", "desc": "Nettoyage équilibré avec blanchisserie et vapeur." },
+      { "type": "Studio",    "price": "Ksh 5,000",  "desc": "Parfait pour un espace moderne compact avec service complet." },
+      { "type": "1 Bedroom", "price": "Ksh 8,000",  "desc": "Nettoyage équilibré avec blanchisserie et vapeur." },
       { "type": "2 Bedroom", "price": "Ksh 13,000", "desc": "Entretien en profondeur des tissus, tapis et organisation." },
       { "type": "3 Bedroom", "price": "Ksh 18,000", "desc": "Entretien premium incluant les appareils." },
       { "type": "4 Bedroom", "price": "Ksh 23,500", "desc": "Service familial avec repassage et désinfection complète." },
@@ -73,39 +66,15 @@
     "everyPlanDescription": "Contrôles qualité standard et fournitures écologiques fournis par notre équipe spécialisée.",
     "drc": {
       "services": [
-        {
-          "title": "Particuliers",
-          "items": [
-            "Maisons & appartements",
-            "Grand ménage complet",
-            "Vitres, sols & désinfection",
-            "Repassage & linge"
-          ]
-        },
-        {
-          "title": "Entreprises",
-          "items": [
-            "Bureaux & espaces communs",
-            "Institutions, ONG & écoles",
-            "Contrats mensuels fixes",
-            "Suivi qualité rigoureux"
-          ]
-        },
-        {
-          "title": "Spécialisé",
-          "items": [
-            "Après travaux / chantiers",
-            "Événements & réceptions",
-            "Nettoyage en profondeur",
-            "Désinfection zones sensibles"
-          ]
-        }
+        { "title": "Particuliers", "items": ["Maisons & appartements", "Grand ménage complet", "Vitres, sols & désinfection", "Repassage & linge"] },
+        { "title": "Entreprises",  "items": ["Bureaux & espaces communs", "Institutions, ONG & écoles", "Contrats mensuels fixes", "Suivi qualité rigoureux"] },
+        { "title": "Spécialisé",   "items": ["Après travaux / chantiers", "Événements & réceptions", "Nettoyage en profondeur", "Désinfection zones sensibles"] }
       ],
       "pricing": [
-        { "title": "Bureaux", "price": "40 – 300 $" },
-        { "title": "Écoles", "price": "150 – 1.000 $" },
-        { "title": "Hôtels", "price": "200 – 1.500 $" },
-        { "title": "Restaurants", "price": "120 – 700 $" }
+        { "title": "Bureaux",      "price": "40 – 300 $" },
+        { "title": "Écoles",       "price": "150 – 1.000 $" },
+        { "title": "Hôtels",       "price": "200 – 1.500 $" },
+        { "title": "Restaurants",  "price": "120 – 700 $" }
       ],
       "contact": {
         "office": "Bureau de Kolwezi",
@@ -114,70 +83,27 @@
       }
     }
   },
-  
   "testimonials": [
-    {
-      "name": "Grace M.",
-      "role": "Kilimani",
-      "message": "Averra Cleaners a complètement transformé ma maison. Ils gèrent tout — même mon four et mon canapé ont l'air neufs chaque semaine.",
-      "image": "/av.jpg"
-    },
-    {
-      "name": "Brian K.",
-      "role": "Lavington",
-      "message": "Ils sont constants, professionnels, et ma maison n'a jamais été aussi fraîche.",
-      "image": "/averra-hero.jpg"
-    },
-    {
-      "name": "Sylvia N.",
-      "role": "Westlands",
-      "message": "Depuis que j'ai engagé Averra Cleaners, je suis impatiente de rentrer chez moi. Tout est impeccable, et ils prennent soin des petits détails que j'oublie toujours.",
-      "image": "/av.jpg"
-    },
-    {
-      "name": "Michael O.",
-      "role": "Parklands",
-      "message": "L'équipe d'Averra Cleaners est incroyable ! Ponctuelle, minutieuse et très sympathique. Ma maison n'a jamais été aussi propre.",
-      "image": "/averra-hero.jpg"
-    },
-    {
-      "name": "Faith W.",
-      "role": "Kilimani",
-      "message": "J'adore qu'ils proposent un forfait complet. Du linge au nettoyage en profondeur, ils facilitent tellement ma vie.",
-      "image": "/av.jpg"
-    },
-    {
-      "name": "James T.",
-      "role": "Lavington",
-      "message": "Averra Cleaners vaut chaque centime. Ils sont fiables, minutieux, et ma maison sent toujours bon et accueillante.",
-      "image": "/averra-hero.jpg"
-    },
-    {
-      "name": "Rachel A.",
-      "role": "Westlands",
-      "message": "Le professionnalisme et le soin qu'ils montrent sont incomparables. Même mes tapis et rideaux ont l'air neufs !",
-      "image": "/av.jpg"
-    }
+    { "name": "Grace M.",   "role": "Kilimani",  "message": "Averra Cleaners a complètement transformé ma maison. Ils gèrent tout — même mon four et mon canapé ont l'air neufs chaque semaine.", "image": "/av.jpg" },
+    { "name": "Brian K.",   "role": "Lavington", "message": "Ils sont constants, professionnels, et ma maison n'a jamais été aussi fraîche.", "image": "/averra-hero.jpg" },
+    { "name": "Sylvia N.",  "role": "Westlands", "message": "Depuis que j'ai engagé Averra Cleaners, je suis impatiente de rentrer chez moi. Tout est impeccable, et ils prennent soin des petits détails que j'oublie toujours.", "image": "/av.jpg" },
+    { "name": "Michael O.", "role": "Parklands", "message": "L'équipe d'Averra Cleaners est incroyable ! Ponctuelle, minutieuse et très sympathique. Ma maison n'a jamais été aussi propre.", "image": "/averra-hero.jpg" },
+    { "name": "Faith W.",   "role": "Kilimani",  "message": "J'adore qu'ils proposent un forfait complet. Du linge au nettoyage en profondeur, ils facilitent tellement ma vie.", "image": "/av.jpg" },
+    { "name": "James T.",   "role": "Lavington", "message": "Averra Cleaners vaut chaque centime. Ils sont fiables, minutieux, et ma maison sent toujours bon et accueillante.", "image": "/averra-hero.jpg" },
+    { "name": "Rachel A.",  "role": "Westlands", "message": "Le professionnalisme et le soin qu'ils montrent sont incomparables. Même mes tapis et rideaux ont l'air neufs !", "image": "/av.jpg" }
   ],
   "header": "Témoignages",
   "title": "Ce que nos clients disent",
   "prev": "← Précédent",
   "next": "Suivant →",
-  
   "contact2": {
     "header": "Contactez-nous",
     "title": "Commençons quelque chose de frais.",
     "subtitle": "Que ce soit un studio à Nairobi ou un bureau à Kolwezi, nous apportons des standards de classe mondiale à votre porte.",
-    "tabs": {
-      "kenya": "Kenya",
-      "drc": "RDC"
-    },
+    "tabs": { "kenya": "Kenya", "drc": "RDC" },
     "callUs": "Appelez-nous",
     "emailUs": "Email",
-    "phone": {
-      "kenya": "+254 769 344 703",
-      "drc": "+243 981 539 797"
-    },
+    "phone": { "kenya": "+254 769 344 703", "drc": "+243 981 539 797" },
     "email": "hello@averracleaners.com",
     "fastResponse": "Réponse rapide",
     "fastResponseDesc": "Nous répondons généralement sous 2 heures.",
@@ -189,15 +115,9 @@
       "serviceCategory": "Catégorie de service",
       "message": "Message",
       "submit": "Envoyer",
-      "services": [
-        "Nettoyage résidentiel",
-        "Nettoyage commercial/bureau",
-        "Post-construction",
-        "Assainissement spécialisé"
-      ]
+      "services": ["Nettoyage résidentiel", "Nettoyage commercial/bureau", "Post-construction", "Assainissement spécialisé"]
     }
   },
-  
   "faq": {
     "badge": "Centre d'Assistance",
     "title_part1": "Curiosités",
@@ -205,39 +125,16 @@
     "bg_text": "Questions",
     "search_placeholder": "Rechercher des mots-clés...",
     "no_results": "Aucun résultat trouvé pour \"{{query}}\"",
-    "cta": {
-      "title": "Vous ne trouvez pas de réponse ?",
-      "subtitle": "Notre équipe de conciergerie est à votre disposition.",
-      "button": "Contactez-nous"
-    },
-    "vetted_badge": {
-      "title": "Personnel Vérifié",
-      "subtitle": "100% Sûr et Fiable"
-    },
+    "cta": { "title": "Vous ne trouvez pas de réponse ?", "subtitle": "Notre équipe de conciergerie est à votre disposition.", "button": "Contactez-nous" },
+    "vetted_badge": { "title": "Personnel Vérifié", "subtitle": "100% Sûr et Fiable" },
     "questions": [
-      {
-        "q": "Qu'est-ce qui est inclus dans le forfait mensuel ?",
-        "a": "Tout. De la lessive et du repassage à la désinfection en profondeur à la vapeur des cuisines et salles de bain. Nous proposons 8 séances complètes par mois—pas de frais cachés, aucune exception."
-      },
-      {
-        "q": "Puis-je choisir mes jours de ménage ?",
-        "a": "Absolument. Nous nous adaptons à votre style de vie. Qu'il s'agisse d'un rythme mardi/vendredi ou des week-ends, notre équipe se synchronise avec votre emploi du temps."
-      },
-      {
-        "q": "Comment fonctionnent les paiements ?",
-        "a": "Une facturation mensuelle simple et transparente. Nous acceptons Mobile Money (M-Pesa/Airtel), les cartes ou les virements bancaires—le tout payé à l'avance pour un service ininterrompu."
-      },
-      {
-        "q": "Apportez-vous vos propres fournitures ?",
-        "a": "Oui. Nos équipes arrivent entièrement équipées de nettoyeurs à vapeur de qualité industrielle et de détergents écologiques haut de gamme sans danger pour les animaux et les enfants."
-      },
-      {
-        "q": "Le personnel est-il vérifié et sûr ?",
-        "a": "La sécurité est notre priorité. Chaque nettoyeur Averra subit des vérifications d'antécédents rigoureuses et une formation professionnelle continue pour garantir votre tranquillité d'esprit."
-      }
+      { "q": "Qu'est-ce qui est inclus dans le forfait mensuel ?", "a": "Tout. De la lessive et du repassage à la désinfection en profondeur à la vapeur des cuisines et salles de bain. Nous proposons 8 séances complètes par mois—pas de frais cachés, aucune exception." },
+      { "q": "Puis-je choisir mes jours de ménage ?",             "a": "Absolument. Nous nous adaptons à votre style de vie. Qu'il s'agisse d'un rythme mardi/vendredi ou des week-ends, notre équipe se synchronise avec votre emploi du temps." },
+      { "q": "Comment fonctionnent les paiements ?",              "a": "Une facturation mensuelle simple et transparente. Nous acceptons Mobile Money (M-Pesa/Airtel), les cartes ou les virements bancaires—le tout payé à l'avance pour un service ininterrompu." },
+      { "q": "Apportez-vous vos propres fournitures ?",           "a": "Oui. Nos équipes arrivent entièrement équipées de nettoyeurs à vapeur de qualité industrielle et de détergents écologiques haut de gamme sans danger pour les animaux et les enfants." },
+      { "q": "Le personnel est-il vérifié et sûr ?",              "a": "La sécurité est notre priorité. Chaque nettoyeur Averra subit des vérifications d'antécédents rigoureuses et une formation professionnelle continue pour garantir votre tranquillité d'esprit." }
     ]
   },
-  
   "cta": {
     "title": "Prêt à vivre un avenir plus propre ?",
     "description": "Rejoignez des centaines de clients satisfaits qui ont sublimé leurs espaces grâce à nos solutions de nettoyage professionnel. Faisons briller votre monde.",
@@ -251,43 +148,130 @@
     "contact_title": "Contactez-nous",
     "location": "Kilimani, Nairobi",
     "links_title": "Liens Rapides",
-    "links": {
-      "home": "Accueil",
-      "about": "À Propos",
-      "services": "Services",
-      "pricing": "Tarifs",
-      "contact": "Contact"
-    },
+    "links": { "home": "Accueil", "about": "À Propos", "services": "Services", "pricing": "Tarifs", "events": "Événements", "contact": "Contact" },
     "copyright": "© {{year}} Averra Cleaners Ltd. Tous droits réservés."
   },
-  
   "chatbot": {
     "title": "Assistante Averra",
     "status": "En ligne · Répond instantanément",
     "badge": "Chattez avec nous !",
     "placeholder": "Écrivez un message...",
-    "suggestions": [
-      "Quels services proposez-vous ?",
-      "Combien coûte un nettoyage ?",
-      "Réserver un rendez-vous",
-      "Utilisez-vous des produits écologiques ?"
-    ],
+    "suggestions": ["Quels services proposez-vous ?", "Combien coûte un nettoyage ?", "Réserver un rendez-vous", "Utilisez-vous des produits écologiques ?"],
     "handoff": {
       "prompt": "Souhaitez-vous continuer sur WhatsApp ou nous envoyer un e-mail pour une réponse plus rapide et personnalisée ?",
       "whatsapp": "Continuer sur WhatsApp",
       "email": "Nous envoyer un e-mail",
       "dismiss": "Non merci, continuer ici"
     },
-    "system_prompt": "Vous êtes l'assistante virtuelle conviviale d'Averra, une entreprise de nettoyage professionnel basée à Nairobi, Kenya et Kolwezi, RDC. Vous aidez les clients pour : la réservation et la planification de séances de nettoyage, les informations sur les services (résidentiel, commercial, nettoyage en profondeur, vapeur, lessive, repassage, entretien des appareils, tapis/canapé/matelas), les tarifs (Kenya : Studio 5000 Ksh, 1BR 8000 Ksh, 2BR 13000 Ksh, 3BR 18000 Ksh, 4BR 23500 Ksh, 5BR 25000 Ksh — RDC : bureaux 40-300$, écoles 150-1000$, hôtels 200-1500$, restaurants 120-700$), et les FAQ. Les forfaits incluent 8 séances/mois. Paiement via M-Pesa, Airtel, carte ou virement. Le personnel est vérifié. Fournitures écologiques incluses. Soyez chaleureuse, concise et professionnelle. Répondez toujours en français. Entreprise : Averra Cleaners. Email : hello@averracleaners.com. Téléphone Kenya : +254 769 344 703."
+    "system_prompt": "Vous êtes l'assistante virtuelle conviviale d'Averra, une entreprise de nettoyage professionnel basée à Nairobi, Kenya et Kolwezi, RDC. Soyez chaleureuse, concise et professionnelle. Répondez toujours en français. Entreprise : Averra Cleaners. Email : hello@averracleaners.com. Téléphone Kenya : +254 769 344 703."
+  },
+
+  "trainingPopup": {
+    "badge": "Nouvelle Formation",
+    "title": "Formation Professionnelle Intensive de 10 Jours",
+    "subtitle": "Assainissement public, nettoyage des routes, recyclage, gestion des déchets et protection de l'environnement.",
+    "description": "Ce programme de formation professionnelle est conçu par des experts pour fournir des connaissances pratiques et des compétences modernes en recyclage, gestion des déchets, nettoyage des routes et espaces publics, assainissement public et protection de l'environnement.",
+    "objectivesTitle": "Ce que vous allez accomplir",
+    "objectives": [
+      "Comprendre les normes d'assainissement public et les pratiques de santé environnementale",
+      "Organiser la collecte, le tri et le recyclage des déchets de manière sûre et efficace",
+      "Acquérir une expérience pratique dans les opérations de terrain et les procédures de nettoyage",
+      "Une plus grande exposition professionnelle grâce aux visites d'entreprises et aux activités de terrain"
+    ],
+    "meta": {
+      "dates":     "8 – 18 Juin 2026",
+      "location":  "Kilimani, Nairobi",
+      "duration":  "10 Jours · Théorie + Terrain",
+      "languages": "EN · FR · Swahili"
+    },
+    "stats": {
+      "duration":       "Durée",
+      "durationVal":    "10 Jours",
+      "sessions":       "Sessions",
+      "sessionsVal":    "10 Sujets",
+      "certificate":    "Certificat",
+      "certificateVal": "Remis"
+    },
+    "tabs": {
+      "overview":  "Aperçu",
+      "schedule":  "Programme 10 Jours"
+    },
+    "scheduleTypes": {
+      "theory_practical": "Théorie & Pratique",
+      "theory":           "Théorie",
+      "practical":        "Pratique",
+      "practical_demo":   "Démo Pratique",
+      "field_activity":   "Activité Terrain",
+      "company_visits":   "Visites d'Entreprises",
+      "evaluation":       "Évaluation"
+    },
+    "schedule": [
+      { "day": "8 Juin",  "topic": "Introduction à l'assainissement public et à la santé environnementale", "typeKey": "theory_practical" },
+      { "day": "9 Juin",  "topic": "Nettoyage des routes et entretien des espaces publics",                  "typeKey": "theory_practical" },
+      { "day": "10 Juin", "topic": "Systèmes de collecte et de transport des déchets",                       "typeKey": "theory" },
+      { "day": "11 Juin", "topic": "Méthodes de tri et de recyclage des déchets",                            "typeKey": "practical" },
+      { "day": "12 Juin", "topic": "Santé publique et hygiène communautaire",                                 "typeKey": "theory" },
+      { "day": "13 Juin", "topic": "Protection de l'environnement et contrôle de la pollution",              "typeKey": "theory" },
+      { "day": "15 Juin", "topic": "Équipements de nettoyage et procédures de sécurité",                     "typeKey": "practical_demo" },
+      { "day": "16 Juin", "topic": "Nettoyage pratique des routes et activités de terrain",                  "typeKey": "field_activity" },
+      { "day": "17 Juin", "topic": "Visites d'entreprises et sessions d'échange professionnel",              "typeKey": "company_visits" },
+      { "day": "18 Juin", "topic": "Évaluation finale et cérémonie de remise des certificats",               "typeKey": "evaluation" }
+    ],
+    "cta": {
+      "title":   "Intéressé par cette formation ?",
+      "contact": "Contactez-nous à hello@averracleaners.com · +254 769 344 703",
+      "button":  "Voir les détails"
+    }
+  },
+
+  "eventsSection": {
+    "sectionBadge": "Événements & Formations",
+    "heading": {
+      "main":   "Apprendre. Évoluer.",
+      "accent": "Certifier."
+    },
+    "subheading":      "Formations professionnelles et événements communautaires conçus pour élever le niveau de l'assainissement et du soin environnemental au Kenya et au-delà.",
+    "highlightsLabel": "Points forts",
+    "registerBtn":     "S'inscrire",
+    "emailSubject":    "Demande de formation",
+    "learnMore":       "En savoir plus",
+    "showLess":        "Réduire",
+    "followNote":      "D'autres événements à venir — suivez-nous",
+    "followNote2":     "pour les mises à jour.",
+    "events": [
+      {
+        "badge": "À la une", "category": "Formation",
+        "title": "Formation Professionnelle Intensive de 10 Jours",
+        "subtitle": "Assainissement public, gestion des déchets, recyclage et protection de l'environnement",
+        "date": "8 – 18 Juin 2026", "location": "Kilimani, Nairobi, Kenya",
+        "duration": "10 Jours", "spots": "Places limitées",
+        "highlights": [
+          "Nettoyage des routes et entretien des espaces publics",
+          "Méthodes de tri et de recyclage des déchets",
+          "Équipements de nettoyage et sécurité",
+          "Activités de terrain et visites d'entreprises",
+          "Cérémonie de remise des certificats au Jour 10"
+        ],
+        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+      },
+      {
+        "badge": "Bientôt", "category": "Atelier",
+        "title": "Atelier de Nettoyage Écologique",
+        "subtitle": "Techniques de nettoyage vert modernes pour particuliers et entreprises",
+        "date": "T3 2026 — Date à confirmer", "location": "Nairobi, Kenya",
+        "duration": "1 Jour", "spots": "Inscription bientôt ouverte",
+        "highlights": ["Sélection de produits écologiques", "Routines de nettoyage durables", "Aperçu des certifications vertes"],
+        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+      },
+      {
+        "badge": "Bientôt", "category": "Communauté",
+        "title": "Journée de Nettoyage Communautaire à Nairobi",
+        "subtitle": "Rejoignez Averra et les partenaires communautaires pour une opération d'assainissement à l'échelle de la ville",
+        "date": "T4 2026 — Date à confirmer", "location": "Divers lieux, Nairobi",
+        "duration": "1 Jour", "spots": "Ouvert à tous",
+        "highlights": ["Collecte des déchets de quartier", "Sensibilisation au recyclage", "Engagement communautaire & prix"],
+        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+      }
+    ]
   }
-
 }
-
-
-
-
-
-
-
-
-

@@ -11,6 +11,9 @@ import Banner from "./components/CTASection"
 import Footer from "./components/Footer"
 import Services from "./components/Services"
 import Chatbot from "./components/Chatbot"
+import EventsSection from "./components/EventsSection"
+import TrainingPopup from "./components/TrainingPopup"
+
 
 const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
@@ -24,6 +27,7 @@ const sectionVariants: Variants = {
 function App() {
   return (
     <div className="font-sans bg-gray-50 overflow-x-hidden">
+      <TrainingPopup />
       <Navbar />
       <Chatbot />
 
@@ -46,6 +50,7 @@ function App() {
         <motion.section variants={sectionVariants}>
           <Pricing />
         </motion.section>
+        <EventsSection />  
 
         <motion.section variants={sectionVariants}>
           <Testimonials />

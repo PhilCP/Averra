@@ -92,9 +92,9 @@ export default function About() {
               <Star className="w-5 h-5 text-primary" fill="currentColor" />
             </div>
             <div>
-              <p className="text-xs text-gray-400 leading-none mb-1">
+              {/* <p className="text-xs text-gray-400 leading-none mb-1">
                 {t("about1.stats.ratingLabel") || "Customer Rating"}
-              </p>
+              </p> */}
               <p className="text-base font-bold text-gray-900 leading-none">4.9 / 5.0</p>
             </div>
           </motion.div>
@@ -170,9 +170,9 @@ export default function About() {
                 <span className="text-4xl font-bold text-gray-900">8</span>
                 <span className="text-primary font-bold text-2xl">yrs</span>
               </div>
-              <p className="text-gray-400 text-sm mt-1">
+              {/* <p className="text-gray-400 text-sm mt-1">
                 {t("about1.stats.experience") || "Experience"}
-              </p>
+              </p> */}
             </div>
           </div>
 
