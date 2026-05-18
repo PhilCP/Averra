@@ -104,7 +104,7 @@
     "callUs": "Appelez-nous",
     "emailUs": "Email",
     "phone": { "kenya": "+254 769 344 703", "drc": "+243 981 539 797" },
-    "email": "hello@averracleaners.com",
+    "email": "infos@averracleaners.com",
     "fastResponse": "Réponse rapide",
     "fastResponseDesc": "Nous répondons généralement sous 2 heures.",
     "followUs": "Suivez-nous:",
@@ -163,7 +163,7 @@
       "email": "Nous envoyer un e-mail",
       "dismiss": "Non merci, continuer ici"
     },
-    "system_prompt": "Vous êtes l'assistante virtuelle conviviale d'Averra, une entreprise de nettoyage professionnel basée à Nairobi, Kenya et Kolwezi, RDC. Soyez chaleureuse, concise et professionnelle. Répondez toujours en français. Entreprise : Averra Cleaners. Email : hello@averracleaners.com. Téléphone Kenya : +254 769 344 703."
+    "system_prompt": "Vous êtes l'assistante virtuelle conviviale d'Averra, une entreprise de nettoyage professionnel basée à Nairobi, Kenya et Kolwezi, RDC. Soyez chaleureuse, concise et professionnelle. Répondez toujours en français. Entreprise : Averra Cleaners. Email : infos@averracleaners.com. Téléphone Kenya : +254 769 344 703."
   },
 
   "trainingPopup": {
@@ -219,7 +219,7 @@
     ],
     "cta": {
       "title":   "Intéressé par cette formation ?",
-      "contact": "Contactez-nous à hello@averracleaners.com · +254 769 344 703",
+      "contact": "Contactez-nous à infos@averracleaners.com · +254 769 344 703",
       "button":  "Voir les détails"
     }
   },
@@ -252,7 +252,7 @@
           "Activités de terrain et visites d'entreprises",
           "Cérémonie de remise des certificats au Jour 10"
         ],
-        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+        "contact": { "email": "infos@averracleaners.com", "phone": "+254 769 344 703" }
       },
       {
         "badge": "Bientôt", "category": "Atelier",
@@ -261,7 +261,7 @@
         "date": "T3 2026 — Date à confirmer", "location": "Nairobi, Kenya",
         "duration": "1 Jour", "spots": "Inscription bientôt ouverte",
         "highlights": ["Sélection de produits écologiques", "Routines de nettoyage durables", "Aperçu des certifications vertes"],
-        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+        "contact": { "email": "infos@averracleaners.com", "phone": "+254 769 344 703" }
       },
       {
         "badge": "Bientôt", "category": "Communauté",
@@ -270,7 +270,7 @@
         "date": "T4 2026 — Date à confirmer", "location": "Divers lieux, Nairobi",
         "duration": "1 Jour", "spots": "Ouvert à tous",
         "highlights": ["Collecte des déchets de quartier", "Sensibilisation au recyclage", "Engagement communautaire & prix"],
-        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+        "contact": { "email": "infos@averracleaners.com", "phone": "+254 769 344 703" }
       }
     ]
   }

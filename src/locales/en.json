@@ -105,7 +105,7 @@
     "callUs": "Call Us",
     "emailUs": "Email Us",
     "phone": { "kenya": "+254 769 344 703", "drc": "+243 981 539 797" },
-    "email": "hello@averracleaners.com",
+    "email": "info@averracleaners.com",
     "fastResponse": "Fast Response",
     "fastResponseDesc": "We usually reply within 2 hours.",
     "followUs": "Follow us:",
@@ -164,7 +164,7 @@
       "email": "Send us an Email",
       "dismiss": "No thanks, continue here"
     },
-    "system_prompt": "You are Averra's friendly virtual assistant for a professional cleaning company based in Nairobi, Kenya and Kolwezi, DRC. You help customers with: booking and scheduling cleaning appointments, information about cleaning services (residential, commercial, deep cleaning, move-in/move-out, steam cleaning, laundry, ironing, appliance detailing, carpet/sofa/mattress care), pricing (Kenya: Studio Ksh 5000, 1BR Ksh 8000, 2BR Ksh 13000, 3BR Ksh 18000, 4BR Ksh 23500, 5BR Ksh 25000 — DRC: offices $40-300, schools $150-1000, hotels $200-1500, restaurants $120-700), and FAQs. Packages include 8 sessions/month. Payment via M-Pesa, Airtel, card, or bank transfer. Staff are vetted and background-checked. Eco-friendly supplies provided. Be warm, concise, and professional. Company: Averra Cleaners. Email: hello@averracleaners.com. Kenya phone: +254 769 344 703."
+    "system_prompt": "You are Averra's friendly virtual assistant for a professional cleaning company based in Nairobi, Kenya and Kolwezi, DRC. You help customers with: booking and scheduling cleaning appointments, information about cleaning services (residential, commercial, deep cleaning, move-in/move-out, steam cleaning, laundry, ironing, appliance detailing, carpet/sofa/mattress care), pricing (Kenya: Studio Ksh 5000, 1BR Ksh 8000, 2BR Ksh 13000, 3BR Ksh 18000, 4BR Ksh 23500, 5BR Ksh 25000 — DRC: offices $40-300, schools $150-1000, hotels $200-1500, restaurants $120-700), and FAQs. Packages include 8 sessions/month. Payment via M-Pesa, Airtel, card, or bank transfer. Staff are vetted and background-checked. Eco-friendly supplies provided. Be warm, concise, and professional. Company: Averra Cleaners. Email: info@averracleaners.com. Kenya phone: +254 769 344 703."
   },
 
   "trainingPopup": {
@@ -220,7 +220,7 @@
     ],
     "cta": {
       "title":   "Interested in this training?",
-      "contact": "Contact us at hello@averracleaners.com · +254 769 344 703",
+      "contact": "Contact us at infos@averracleaners.com · +254 769 344 703",
       "button":  "See Event Details"
     }
   },
@@ -253,7 +253,7 @@
           "Field activities & company visits",
           "Certificate ceremony on Day 10"
         ],
-        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+        "contact": { "email": "info@averracleaners.com", "phone": "+254 769 344 703" }
       },
       {
         "badge": "Coming Soon", "category": "Workshop",
@@ -262,7 +262,7 @@
         "date": "Q3 2026 — Date TBD", "location": "Nairobi, Kenya",
         "duration": "1 Day", "spots": "Open registration soon",
         "highlights": ["Eco-friendly product selection", "Sustainable cleaning routines", "Green certifications overview"],
-        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703" }
+        "contact": { "email": "info@averracleaners.com", "phone": "+254 769 344 703" }
       },
       {
         "badge": "Coming Soon", "category": "Community",
@@ -271,7 +271,7 @@
         "date": "Q4 2026 — Date TBD", "location": "Various Locations, Nairobi",
         "duration": "1 Day", "spots": "Open to all",
         "highlights": ["Neighbourhood waste collection", "Recycling awareness drive", "Community engagement & prizes"],
-        "contact": { "email": "hello@averracleaners.com", "phone": "+254 769 344 703 | +243 981 539 797" }
+        "contact": { "email": "info@averracleaners.com", "phone": "+254 769 344 703 | +243 981 539 797" }
       }
     ]
   }
